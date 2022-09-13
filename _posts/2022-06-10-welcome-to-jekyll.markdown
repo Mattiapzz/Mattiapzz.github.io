@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Mattia Piazza Personal Website"
 date:   2022-06-10 00:02:05 +0200
 categories: jekyll update
 ---

@@ -1,0 +1,21 @@
+# main links
+main:
+   - title: "About"
+     url: /about/
+   - title: "Research"
+     url: /Research/
+   - title: "Teaching"
+     url: /Teaching/
+   - title: "CV"
+     url: /CV/
+   - title: "Climbing"
+     url: /Climbing/
+   - title: "Contact"
+     url: /Contact/
+
+
+
+
+
+
+

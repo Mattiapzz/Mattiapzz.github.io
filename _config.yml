@@ -81,7 +81,7 @@ naver_site_verification  :
 twitter:
   username               : "mattiapzz			"
 facebook:
-  username               : "michele.focchi"
+  username               : ""
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -107,13 +107,13 @@ author:
   bio              : ""
   location         : "Trento, Italy"
   github           : "mattiapzz"
-  linkedin         : " " #  "michele-focchi-4149115/"
+  linkedin         : " " 
   YouTube          : " " # "https://www.youtube.com/channel/UC45i3BaTxTpDWPLY2UhpolA"
 
 # Site Footer
 footer:
 
-  linkedin          : " " # "michele-focchi-4149115/"
+  linkedin          : " " 
   github            : "https://github.com/mattiapzz"
   YouTube           : " " # "https://www.youtube.com/channel/UC45i3BaTxTpDWPLY2UhpolA"
 

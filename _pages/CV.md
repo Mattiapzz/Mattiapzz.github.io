@@ -5,7 +5,7 @@ header:
 
 ---
 
-You can find my CV [here](https://www.github.com/mattiapzz).
+You can find my CV [here](https://github.com/Mattiapzz/VisualCV/blob/main/MattiaPiazzaCVEng.pdf).
 
 
 

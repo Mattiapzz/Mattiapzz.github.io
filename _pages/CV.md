@@ -7,7 +7,7 @@ header:
 
 You can find my CV [here](https://github.com/Mattiapzz/VisualCV/blob/main/MattiaPiazzaCVEng.pdf).
 
-<embed src="https://mattiapzz.github.io/assets/pdf/MattiaPiazzaCVEng.pdf" type="application/pdf" width="600" height="780"/>
+<embed src="https://mattiapzz.github.io/assets/pdf/MattiaPiazzaCVEng.pdf" type="application/pdf" width="100%" height="780"/>
 
 
 <!-- <object data="https://github.com/Mattiapzz/VisualCV/blob/main/MattiaPiazzaCVEng.pdf" type="application/pdf" width="700px" height="700px">

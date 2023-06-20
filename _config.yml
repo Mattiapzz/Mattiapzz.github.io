@@ -72,7 +72,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "google9d245cf9d8e764f1.html"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -104,18 +104,18 @@ analytics:
 author:
   name             : "Mattia Piazza"
   avatar           : /assets/images/bio-photo.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ""
+  bio              : "Mechatronics Engineeer, PhD Student"
   location         : "Trento, Italy"
   github           : "mattiapzz"
   linkedin         : " " 
-  YouTube          : " " # "https://www.youtube.com/channel/UC45i3BaTxTpDWPLY2UhpolA"
+  YouTube          : " " 
 
 # Site Footer
 footer:
 
   linkedin          : " " 
   github            : "https://github.com/mattiapzz"
-  YouTube           : " " # "https://www.youtube.com/channel/UC45i3BaTxTpDWPLY2UhpolA"
+  YouTube           : " " 
 
 
 # Reading Files

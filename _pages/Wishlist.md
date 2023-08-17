@@ -22,6 +22,7 @@ header:
 
 | Name                                                                                                      | Done | Date |
 |-----------------------------------------------------------------------------------------------------------|------|------|
+| [52 Gallerie](https://www.stradadellegallerie.it/escursione-dati-informazioni/)                           |      |      |
 | [Torri del Vajolet](https://fringeintravel.com/trekking-alle-torri-del-vajolet-3-percorsi-per-scoprirle/) |      |      |
 
 ### Peaks and Huts

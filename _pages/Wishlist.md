@@ -58,7 +58,7 @@ header:
 | Where/What                                                                                              | Done | Date |
 |---------------------------------------------------------------------------------------------------------|------|------|
 | [Latemar](https://www.visittrentino.info/it/guida/tour/giro-del-latemar-tour-930_tour_5935422)          |      |      |
-| Flgaria Lavarone Luserna                                                                                |      |      |
+| Folgaria Lavarone Luserna                                                                               |      |      |
 | Sarche                                                                                                  |      |      |
 | Val di Non                                                                                              |      |      |
 | Riva del Garda (Anello)                                                                                 |      |      |

@@ -2,6 +2,13 @@
 title: "Wishlist"
 permalink: /Wishlist/
 header:
+tags: 
+  - Wishlist
+  - places
+  - mountain
+  - MTB
+  - Clibing
+  - Hiking
 ---
 
 ## Places

@@ -1,7 +1,11 @@
 ---
-title: ""
+title: "Research"
 permalink: /Research/
-tags: [locomotion, numerical optimization, planning]
+tags: 
+  - Dynamics of vehicles
+  - Optimal control
+  - numerical optimization
+  - planning
 header:
 classes: wide
 mathjax: "true"

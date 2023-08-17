@@ -41,7 +41,7 @@ header:
 
 | Name                                                                                                                   | Done | Date |
 |------------------------------------------------------------------------------------------------------------------------|------|------|
-| [Burrone giovannelli](https://www.ferrate365.it/vie-ferrate/sentiero-attrezzato-burrone-giovanelli-mezzocorona)        |  Y   |      |
+| [Burrone giovannelli](https://www.ferrate365.it/vie-ferrate/sentiero-attrezzato-burrone-giovanelli-mezzocorona)        | Y    |      |
 | [Bocchette Centrali e Alte](https://www.ferrate365.it/vie-ferrate/ferrata-bocchette-centrali-brenta/)                  |      |      |
 | [Sentiero dei fiori](https://www.ferrate365.it/vie-ferrate/ferrata-sentiero-fiori-tonale-adamello/)                    |      |      |
 | [Rino Pisetta](https://www.ferrate365.it/vie-ferrate/ferrata-rino-pisetta/)                                            |      |      |
@@ -55,20 +55,23 @@ header:
 
 ## MTB
 
-| Where/What                                                                                     | Done | Date |
-|------------------------------------------------------------------------------------------------|------|------|
-| [Latemar](https://www.visittrentino.info/it/guida/tour/giro-del-latemar-tour-930_tour_5935422) |      |      |
-| Flgaria Lavarone Luserna                                                                       |      |      |
-| Sarche                                                                                         |      |      |
-| Val di Non                                                                                     |      |      |
-| Riva del Garda (Anello)                                                                        |      |      |
+| Where/What                                                                                              | Done | Date |
+|---------------------------------------------------------------------------------------------------------|------|------|
+| [Latemar](https://www.visittrentino.info/it/guida/tour/giro-del-latemar-tour-930_tour_5935422)          |      |      |
+| Flgaria Lavarone Luserna                                                                                |      |      |
+| Sarche                                                                                                  |      |      |
+| Val di Non                                                                                              |      |      |
+| Riva del Garda (Anello)                                                                                 |      |      |
+| [Valle dei Laghi](https://www.visittrentino.info/it/guida/tour/tour-della-valle-dei-laghi_tour_7889758) |      |      |
+
+
 
 ## Ski
 
 | Name                 | Done | Date |
 |----------------------|------|------|
-| Sella Ronda          |  Y   |      |
-| Pampeago             |  Y   |      |
+| Sella Ronda          | Y    |      |
+| Pampeago             | Y    |      |
 | Madonna di Campiglio |      |      |
 | Val di Fassa         |      |      |
 | Lavarone             |      |      |

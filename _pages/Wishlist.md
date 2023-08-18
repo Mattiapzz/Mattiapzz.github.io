@@ -60,6 +60,7 @@ tags:
 | [Alta Via Ferrata](https://www.visittrentino.info/it/guida/tour/alta-via-ferrata-attraversata-del-brenta_tour_9804445) |      |      |
 | [Via delle normali](https://www.visittrentino.info/it/guida/tour/la-via-delle-normali_tour_59969979)                   |      |      |
 | [Ferrata Marangoni](https://www.ferrate365.it/vie-ferrate/ferrata-marangoni-mori-monte-albano/)                        |      |      |
+| [Ferrata Giulio Segata](https://www.ferrate365.it/vie-ferrate/ferrata-giulio-segata-bondone/)                          |      |      |
 
 ## MTB
 

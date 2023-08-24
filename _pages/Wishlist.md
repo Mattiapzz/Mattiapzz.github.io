@@ -45,7 +45,7 @@ tags:
 ### Via Ferrata
 
 - [x] [Burrone giovannelli](https://www.ferrate365.it/vie-ferrate/sentiero-attrezzato-burrone-giovanelli-mezzocorona), Maggio 2023
-- [ ] [Bocchette Centrali e Alte](https://www.ferrate365.it/vie-ferrate/ferrata-bocchette-centrali-brenta/)
+- [x] [Bocchette Centrali e Alte](https://www.ferrate365.it/vie-ferrate/ferrata-bocchette-centrali-brenta/), Agosto 2023
 - [ ] [Sentiero dei fiori](https://www.ferrate365.it/vie-ferrate/ferrata-sentiero-fiori-tonale-adamello/)
 - [ ] [Rino Pisetta](https://www.ferrate365.it/vie-ferrate/ferrata-rino-pisetta/)
 - [ ] [Che Guevara](https://www.ferrate365.it/vie-ferrate/ferrata-che-guevara-monte-casale-pietramurata/)

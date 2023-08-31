@@ -1,6 +1,6 @@
 ---
 title: "Category"
-permalink: /Category_test/
-layout: category
+permalink: /Categories_test/
+layout: categories
 author_profile: true
 ---

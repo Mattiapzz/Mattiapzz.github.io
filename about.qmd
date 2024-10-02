@@ -1,0 +1,26 @@
+---
+title: "About Me"
+---
+
+**Mattia Piazza** is currently a Researcher and PhD student in the **Doctoral Program in Materials, Mechatronics and Systems Engineering ([DRMMSE](https://www.unitn.it/drmmse))** at the [University of Trento](https://webapps.unitn.it/du/it/Persona/PER0221571/Didattica).
+After receiving his high school diploma in 2013, he obtained a bachelor of science degree in **Mechanical Engineering** at the [University of Udine](https://www.uniud.it/it) in 2017, and he achieved a master of science degree in **Mechatronic Engineering** at the [University of Trento](https://www.unitn.it/it) in 2020. He was awarded with a postgraduate scholarship and then a two-year research fellowship grant to expand his thesis research on minimum time optimal control problem for racing vehicles. In 2022, he enrolled in the PhD program where he is currently working on autonomous driving algorithms and Advanced Driver-Assistance Systems (ADAS) for racing and urban vehicles.
+
+## Previous works
+
+- Development of complete dynamic model of racing motorcycles for optimal control problem.
+- Development of continuation (homotopy) strategies to solve optimal control problem.
+- Development of regularization expression to model slip dynamic.
+- Matlab interface to connect IPOPT (Interior Point OPTimizer) direct method with PINS (Pins is Not a Solver) indirect method.
+- Matlab 3D internal visualizer for optimal control problem.
+- Matlab interface to convert racetracks from clothoid curves into JSON files and OpenDrive format.
+- Advance Hybrid RRT* algorithm for path planning in dynamic environment
+- Motion Primitive C++ library for speed and acceleration control of vehicles.
+
+## Projects I was involved
+
+<!-- **Projects I was involved** -->
+
+- Automatic racetrack generator for vehicle simulators: Collaboration with a startup to develop a toolchain for automatic generation of racetracks and scenarios for vehicle simulators
+- An advance classical approach algorithm for autonomous driving: Collaboration with an industrial partner inside **VeDi 2025** project financed by MISE (*Ministero dello Sviluppo Economico*).
+- Minimum Lap Time Simulator: Collaboration with an Italian motorcycle team (MotoGP) to develop a toolbox able to compute optimal trajectories and controls for minimum lap time.
+- MPTree: Advance Hybrid RRT* algorithm for path planning in a dynamic environment.

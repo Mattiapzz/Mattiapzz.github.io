@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: website
+  resources: [data google9d245cf9d8e764f1.html]
+
+website:
+  title: "Mattia Piazza"
+  navbar:
+    search: true
+    right:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: CV.qmd
+        text: CV
+      - href: contact.qmd
+        text: Contact
+  page-footer: "Copyright 2024, Mattia Piazza" 
+  back-to-top-navigation: true
+  # standalone: true
+
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+
+
+

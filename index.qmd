@@ -1,0 +1,54 @@
+---
+title: Mattia Piazza
+image: data/bio-photo2.jpg
+about:
+  id: hero-heading
+  image-width: 12em
+  template: trestles
+  image-shape: round
+  links:
+    - icon: linkedin
+      # text: linkedin
+      href: https://www.linkedin.com/in/
+    - icon: github
+      # text: Github
+      href: https://github.com/mattiapzz
+    - icon: envelope
+      # text: Email
+      href: mailto:mattia.piazza@unitn.it
+    - #icon: "{{< ai google-scholar >}}"
+      text: "{{< ai google-scholar >}}"
+      href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
+---
+
+:::{#hero-heading}
+
+Mattia Piazza is a doctoral researcher and mecatronic Engineer at University of Trento. When he is not working on optimal control problems he enjoys hiking and climbing.
+
+
+## Education
+
+University of Trento | Trento, Italy
+PhD in Materials, Mechatronics and Systems Engineering | Sept 2022 - present
+
+University of Trento | Trento, Italy
+MSc in Mechatronic Engineering | Sept 2017 - March 2020
+
+University of Udine | Udine, Italy
+BSc in Mechanical Engineering | Sept 2013 - March 2017
+
+## Projects
+
+VeDi 2025 | Autonomous Driving Algorithm | Jan 2022 - June 2024
+
+MotoGP | Minimum Lap Time Simulator | Jun 2020 - present
+
+SUNRISE | Safety Assurance Framework | Jan 2024 - present
+
+Antemotion | Autonomous Racetrack Generator | Jan 2021 - Dec 2022
+
+:::
+
+
+
+

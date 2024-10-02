@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mattia Piazza",
+    "section": "",
+    "text": "Mattia Piazza is a doctoral researcher and mecatronic Engineer at University of Trento. When he is not working on optimal control problems he enjoys hiking and climbing.\n\n\nUniversity of Trento | Trento, Italy PhD in Materials, Mechatronics and Systems Engineering | Sept 2022 - present\nUniversity of Trento | Trento, Italy MSc in Mechatronic Engineering | Sept 2017 - March 2020\nUniversity of Udine | Udine, Italy BSc in Mechanical Engineering | Sept 2013 - March 2017\n\n\n\nVeDi 2025 | Autonomous Driving Algorithm | Jan 2022 - June 2024\nMotoGP | Minimum Lap Time Simulator | Jun 2020 - present\nSUNRISE | Safety Assurance Framework | Jan 2024 - present\nAntemotion | Autonomous Racetrack Generator | Jan 2021 - Dec 2022"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Mattia Piazza",
+    "section": "",
+    "text": "University of Trento | Trento, Italy PhD in Materials, Mechatronics and Systems Engineering | Sept 2022 - present\nUniversity of Trento | Trento, Italy MSc in Mechatronic Engineering | Sept 2017 - March 2020\nUniversity of Udine | Udine, Italy BSc in Mechanical Engineering | Sept 2013 - March 2017"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Mattia Piazza",
+    "section": "",
+    "text": "VeDi 2025 | Autonomous Driving Algorithm | Jan 2022 - June 2024\nMotoGP | Minimum Lap Time Simulator | Jun 2020 - present\nSUNRISE | Safety Assurance Framework | Jan 2024 - present\nAntemotion | Autonomous Racetrack Generator | Jan 2021 - Dec 2022"
+  },
+  {
+    "objectID": "CV.html",
+    "href": "CV.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Download PDF file.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: mattia.piazza@unitn.it\nAddress: via Sommarive 9, 38123 Trento TN, Italy\n123moviesmap for website\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Mattia Piazza is currently a Researcher and PhD student in the Doctoral Program in Materials, Mechatronics and Systems Engineering (DRMMSE) at the University of Trento. After receiving his high school diploma in 2013, he obtained a bachelor of science degree in Mechanical Engineering at the University of Udine in 2017, and he achieved a master of science degree in Mechatronic Engineering at the University of Trento in 2020. He was awarded with a postgraduate scholarship and then a two-year research fellowship grant to expand his thesis research on minimum time optimal control problem for racing vehicles. In 2022, he enrolled in the PhD program where he is currently working on autonomous driving algorithms and Advanced Driver-Assistance Systems (ADAS) for racing and urban vehicles."
+  },
+  {
+    "objectID": "about.html#previous-works",
+    "href": "about.html#previous-works",
+    "title": "About Me",
+    "section": "Previous works",
+    "text": "Previous works\n\nDevelopment of complete dynamic model of racing motorcycles for optimal control problem.\nDevelopment of continuation (homotopy) strategies to solve optimal control problem.\nDevelopment of regularization expression to model slip dynamic.\nMatlab interface to connect IPOPT (Interior Point OPTimizer) direct method with PINS (Pins is Not a Solver) indirect method.\nMatlab 3D internal visualizer for optimal control problem.\nMatlab interface to convert racetracks from clothoid curves into JSON files and OpenDrive format.\nAdvance Hybrid RRT* algorithm for path planning in dynamic environment\nMotion Primitive C++ library for speed and acceleration control of vehicles."
+  },
+  {
+    "objectID": "about.html#projects-i-was-involved",
+    "href": "about.html#projects-i-was-involved",
+    "title": "About Me",
+    "section": "Projects I was involved",
+    "text": "Projects I was involved\n\n\nAutomatic racetrack generator for vehicle simulators: Collaboration with a startup to develop a toolchain for automatic generation of racetracks and scenarios for vehicle simulators\nAn advance classical approach algorithm for autonomous driving: Collaboration with an industrial partner inside VeDi 2025 project financed by MISE (Ministero dello Sviluppo Economico).\nMinimum Lap Time Simulator: Collaboration with an Italian motorcycle team (MotoGP) to develop a toolbox able to compute optimal trajectories and controls for minimum lap time.\nMPTree: Advance Hybrid RRT* algorithm for path planning in a dynamic environment."
+  }
+]

@@ -16,6 +16,8 @@ about:
       href: mailto:mattia.piazza@unitn.it
     - text: "{{< ai google-scholar >}}"
       href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0003-0182-5867
 ---
 
 :::{#hero-heading}

@@ -13,7 +13,7 @@ about:
     - icon: github
       href: https://github.com/mattiapzz
     - icon: envelope
-      href: mailto:mattia.piazza@unitn.it
+      href: mailto:mattia.piazza.eng@unitn.it
     - text: "{{< ai google-scholar >}}"
       href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
     - text: "{{< ai orcid >}}"

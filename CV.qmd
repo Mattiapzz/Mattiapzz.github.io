@@ -9,27 +9,63 @@ title: "Curriculum Vitae"
 ::: {.entry-list}
 
 ::: {.entry}
+::: {.entry-icon}
+{{< fa graduation-cap >}}
+:::
+
+::: {.entry-body}
 [PhD in Systems Engineering]{.entry-title} — Research on optimal control and lap-time simulation for racing applications.
 :::
+:::
 
 ::: {.entry}
+::: {.entry-icon}
+{{< fa briefcase >}}
+:::
+
+::: {.entry-body}
 [4+ years experience]{.entry-title} — Motion planning, optimal control, and vehicle and autonomous agent dynamics.
 :::
+:::
 
 ::: {.entry}
+::: {.entry-icon}
+{{< fa car >}}
+:::
+
+::: {.entry-body}
 [Vehicle dynamics]{.entry-title} — Custom multi-body models and controls for OEMs and motorsport.
 :::
+:::
 
 ::: {.entry}
+::: {.entry-icon}
+{{< fa code >}}
+:::
+
+::: {.entry-body}
 [Programming proficiency]{.entry-title} — Extensive use of C++, MATLAB and Python for algorithm and tool development.
 :::
-
-::: {.entry}
-[Software engineering]{.entry-title} — Experienced with Git and cross-platform development workflows.
 :::
 
 ::: {.entry}
+::: {.entry-icon}
+{{< fa gears >}}
+:::
+
+::: {.entry-body}
+[Software engineering]{.entry-title} — Experienced with Git and cross-platform development workflows.
+:::
+:::
+
+::: {.entry}
+::: {.entry-icon}
+{{< fa globe >}}
+:::
+
+::: {.entry-body}
 [International collaboration]{.entry-title} — Experience in European, national, and OEM-funded projects.
+:::
 :::
 
 :::
@@ -39,29 +75,45 @@ title: "Curriculum Vitae"
 ::: {.entry-list}
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [PhD Researcher — Doctoral program in Mechatronics and Systems Engineering]{.entry-title}\
 University of Trento, IT\
 Motion planning algorithms for autonomous driving, multiagent cooperation and racing scenarios. Multiplatform real-time control library. MLT simulator for MotoGP with indirect optimal control methods.\
 [2022 – present]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/tum.svg" alt="Technical University of Munich logo">
+
+::: {.entry-body}
 [Visiting Researcher — Autonomous Vehicle Systems Laboratory]{.entry-title}\
 Technische Universität München (TUM), DE\
 Velocity profile online optimization for the Indy Autonomous Challenge (IAC) and Abu Dhabi Autonomous Racing League (A2RL). Time-optimal velocity planning and control under dynamic grip constraints.\
 [2025 – present]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Research Fellowship]{.entry-title} (Research grant decree n. 205/2020)\
 University of Trento, IT — Solution algorithms comparison for minimum-time optimal control problems for racing vehicles.\
 [2021 – 2022]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Research Scholarship]{.entry-title} (Decree n. 74/2020)\
 University of Trento, IT — Minimum Time Manoeuvres of complex vehicle models described with DAEs.\
 [2020 – 2021]{.entry-meta}
+:::
 :::
 
 :::
@@ -71,10 +123,14 @@ University of Trento, IT — Minimum Time Manoeuvres of complex vehicle models d
 ::: {.entry-list}
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/stellantis.svg" alt="Stellantis logo">
+
+::: {.entry-body}
 [VeDi 2025]{.entry-title} — *Ministero Italiano dello Sviluppo Economico*\
 CRF – Stellantis | University of Trento\
 Development of a motion planner for maneuver negotiation between AVs via V2X communication.\
 [2022 – 2024]{.entry-meta}
+:::
 :::
 
 ::: {.entry}
@@ -85,17 +141,28 @@ Safety Assurance Framework for CCAM.\
 :::
 
 ::: {.entry}
+<div class="entry-logos">
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+<img class="entry-logo" src="data/logos/tum.svg" alt="Technical University of Munich logo">
+</div>
+
+::: {.entry-body}
 [FBGA]{.entry-title} — Forward-Backward method for time-optimal velocity planning under generic acceleration constraints ([DRIVEWISE/FBGA](https://github.com/DRIVEWISE/FBGA))\
 TUM IAC and A2RL racing team | University of Trento\
 Fast real-time velocity profile optimization tool under generic complex gggv constraints.\
 [2025 – present]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/aprilia-racing.svg" alt="Aprilia Racing logo">
+
+::: {.entry-body}
 [Minimum Lap Time Simulator]{.entry-title}\
 Aprilia Racing | University of Trento\
 Optimal Control offline MLT simulator and performance analysis.\
 [2021 – present]{.entry-meta}
+:::
 :::
 
 :::
@@ -105,27 +172,43 @@ Optimal Control offline MLT simulator and performance analysis.\
 ::: {.entry-list}
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [PhD Candidate — Doctoral program in Materials, Mechatronics and Systems Engineering]{.entry-title}\
 University of Trento\
 [2022 – present]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Professional qualification to practice as an engineer — Industrial Engineer]{.entry-title}\
 University of Trento\
 [2020]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Master of Science in Mechatronics Engineering]{.entry-title}\
 University of Trento\
 [2017 – 2020]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/uniud.png" alt="University of Udine logo">
+
+::: {.entry-body}
 [Bachelor of Science in Mechanical Engineering]{.entry-title}\
 University of Udine\
 [2013 – 2017]{.entry-meta}
+:::
 :::
 
 :::
@@ -135,15 +218,23 @@ University of Udine\
 ::: {.entry-list}
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Teaching assistant]{.entry-title}\
 University of Trento — *Mechatronics Systems Simulation*, *Sistemi Meccanici e Modelli*, *Fondamenti di Meccanica* (Prof. F. Biral, Prof. E. Bertolazzi, Prof. M. Da Lio).\
 [2023 – 2026]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Tutor, mechanics and mechatronics; video-lectures]{.entry-title}\
 University of Trento — Frontal lecturer and video lecture (DII YouTube channel).\
 [2018 – 2019]{.entry-meta}
+:::
 :::
 
 :::
@@ -153,15 +244,33 @@ University of Trento — Frontal lecturer and video lecture (DII YouTube channel
 ::: {.entry-list}
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/reply.svg" alt="Reply logo">
+
+::: {.entry-body}
+[Reply Code Challenge — Standard Edition 2025]{.entry-title}\
+Issued by Reply — 39th place among approximately 3,600 teams.\
+[Jan 2025]{.entry-meta}
+:::
+:::
+
+::: {.entry}
+<img class="entry-logo" src="data/logos/ifac.png" alt="IFAC logo">
+
+::: {.entry-body}
 [IFAC Young Author Award]{.entry-title}\
 IFAC CTS 2024, Ayia Napa, Cyprus — for *"MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance"*\
 [Jul 2024]{.entry-meta}
 :::
+:::
 
 ::: {.entry}
+<img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
+
+::: {.entry-body}
 [Best Poster Award]{.entry-title}\
 Department of Industrial Engineering (DII), University of Trento — first place for *"MPTree: Motion primitive tree exploration for trajectory planning with dynamic and cooperative obstacle avoidance"*\
 [Nov 2023]{.entry-meta}
+:::
 :::
 
 :::

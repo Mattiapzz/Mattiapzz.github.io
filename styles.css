@@ -24,15 +24,64 @@
   border: 0;
 }
 
-/* ---- education / projects entries ---- */
+/* ---- education / experience / projects entries ---- */
 .entry-list {
   display: grid;
-  gap: 1rem;
+  gap: .75rem;
   margin: 1rem 0;
 }
 .entry {
-  border-left: 3px solid var(--bs-primary, #375a7f);
-  padding-left: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid var(--bs-border-color, rgba(127, 127, 127, .3));
+  border-radius: .5rem;
+  padding: 1rem 1.25rem;
+}
+.entry-logo {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: .25rem;
+  background: #fff;
+  padding: .25rem;
+}
+.entry-logos {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  flex-shrink: 0;
+}
+.entry-logos p {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  margin: 0;
+}
+.entry-logos .entry-logo {
+  margin: 0;
+}
+.entry-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: .25rem;
+  background: var(--bs-primary, #375a7f);
+  color: #fff;
+  font-size: 1.15rem;
+}
+.entry-icon p {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.entry-body {
+  flex: 1;
+  min-width: 0;
 }
 .entry .entry-title {
   font-weight: 600;
@@ -40,4 +89,76 @@
 .entry .entry-meta {
   font-size: .9rem;
   opacity: .8;
+}
+
+/* ---- publication cards ---- */
+.pub-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.pub-card {
+  display: flex;
+  gap: 1.25rem;
+  border: 1px solid var(--bs-border-color, rgba(127, 127, 127, .3));
+  border-radius: .5rem;
+  padding: 1.25rem;
+}
+.pub-thumb {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: .25rem;
+  flex-shrink: 0;
+  background: var(--bs-tertiary-bg, rgba(127, 127, 127, .15));
+}
+.pub-thumb-placeholder {
+  width: 100px;
+  height: 130px;
+  border-radius: .25rem;
+  flex-shrink: 0;
+  background: var(--bs-tertiary-bg, rgba(127, 127, 127, .15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: .75rem;
+  opacity: .55;
+  padding: .5rem;
+}
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+.pub-title {
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+.pub-authors {
+  font-size: .9rem;
+  opacity: .85;
+  margin-bottom: .3rem;
+}
+.pub-venue {
+  font-size: .85rem;
+  opacity: .7;
+  margin-bottom: .6rem;
+}
+.pub-links {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.pub-badge {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .25rem .6rem;
+  border-radius: .3rem;
+  text-decoration: none;
+  border: 1px solid var(--bs-primary, #375a7f);
+}
+@media (max-width: 575.98px) {
+  .pub-card { flex-direction: column; }
+  .pub-thumb, .pub-thumb-placeholder { width: 100%; height: 160px; }
 }

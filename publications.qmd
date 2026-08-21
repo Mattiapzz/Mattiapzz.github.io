@@ -1,0 +1,21 @@
+---
+title: Publications
+bibliography: bibliography.bib
+csl: ieee.csl
+nocite: |
+  @piazza2024mptreeMYPUB, @piccinini2024impactsMYPUB, @piazza2024nonMYPUB, @piccinini2023physicsMYPUB, @cherubini2024bootstrappedMYPUB, @piazza2025RealMYPUB, @piazza2026beyondMYPUB, @Piccinini2026trajectoryMYPUB, @corradini2026cornerMYPUB, @piazza2026fastMYPUB, @ciuffoletti2026modularAVECMYPUB, @piazza2026FBGAMYPUB, @ciuffoletti2026differentiableMYPUB, @piazza2026FBGAfastMYPUB, @rosatipapini2026nnodelyMYPUB
+---
+
+## Peer-reviewed publications
+
+::: {#refs}
+:::
+
+## Supervised theses
+
+MS theses in Mechatronics Engineering, University of Trento, co-supervised by Mattia Piazza.
+
+- **2026** — Sabrina Ciuffoletti, *Modular Optimization-Based Motion Planner for Autonomous Agents: Application on Autonomous Vehicles in Structured and Unstructured Environments*. Supervisors: Gastone Pietro Rosati Papini, Mattia Piazza.
+- **2025** — Mattia Pettene, *Development of a Motion Primitive based Planner for Autonomous Driving Applications*. Supervisors: Francesco Biral, Mattia Piazza.
+- **2024** — Annachiara D'Aquilio, *Optimal Trajectory Planning for Kernels of CNC Machine Tools*. Supervisors: Enrico Bertolazzi, Paolo Bosetti, Mattia Piazza.
+- **2023** — Marco Grano, *Design and Optimization of a Speed Controller for Cooperative Adaptive Cruise Control (C-ACC)*. Supervisors: Francesco Biral, Mattia Piazza, Juan Pablo Salmoiraghi.

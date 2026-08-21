@@ -1,10 +1,18 @@
 project:
   type: website
   output-dir: docs
-  resources: [data google9d245cf9d8e764f1.html]
+  resources: [data, google9d245cf9d8e764f1.html]
+  post-render: scripts/bold-author.sh
 
 website:
   title: "Mattia Piazza"
+  site-url: https://mattiapzz.github.io
+  description: "Doctoral researcher in optimal control and motion planning for autonomous and racing vehicles, University of Trento."
+  favicon: data/favicon.png
+  open-graph:
+    image: data/og-image.jpg
+  twitter-card:
+    image: data/og-image.jpg
   navbar:
     search: true
     right:
@@ -12,18 +20,20 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: publications.qmd
+        text: Publications
       - href: CV.qmd
         text: CV
       - href: contact.qmd
         text: Contact
-  page-footer: "Copyright 2024, Mattia Piazza" 
+  page-footer: "&copy; 2026 Mattia Piazza"
   back-to-top-navigation: true
   # standalone: true
 
 
 format:
   html:
-    theme: darkly
+    theme: [darkly, flatly]
     css: styles.css
     toc: true
 

@@ -55,5 +55,33 @@
     });
 
     if (reduce && mode === 'scroll') set(el, 50);
+
+    // On-load intro: full photo -> full wave -> settle at half, timed to
+    // roughly span the hero-statement typewriter. Cancels on first touch.
+    if (mode === 'pointer' && !reduce) {
+      set(el, 0);   // jump to the start frame before the transition is armed,
+      var introTimers = [];
+      // ...so this first move never gets skipped/coalesced by the browser.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          el.classList.add('intro');
+          introTimers.push(setTimeout(function () { set(el, 100); }, 800));
+          introTimers.push(setTimeout(function () { set(el, 50); }, 1900));
+          // Keep the slow transition armed until this last leg actually
+          // finishes -- dropping the class any earlier makes it snap.
+          introTimers.push(setTimeout(function () { el.classList.remove('intro'); }, 3000));
+        });
+      });
+      var cancelIntro = function () {
+        introTimers.forEach(clearTimeout);
+        el.classList.remove('intro');
+        el.removeEventListener('mousedown', cancelIntro);
+        el.removeEventListener('touchstart', cancelIntro);
+        el.removeEventListener('mousemove', cancelIntro);
+      };
+      el.addEventListener('mousedown', cancelIntro);
+      el.addEventListener('touchstart', cancelIntro);
+      el.addEventListener('mousemove', cancelIntro);
+    }
   });
 })();

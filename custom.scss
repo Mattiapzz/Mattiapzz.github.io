@@ -49,6 +49,14 @@ $grid-body-width: 960px !default;
   initial-value: 0deg;
 }
 
+// Same reasoning for the reveal slider's --r: without this, changing it
+// snaps the mask/clip-path instantly no matter what transition is declared.
+@property --r {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 50%;
+}
+
 // --- Reset / base ---
 body {
   -webkit-font-smoothing: antialiased;
@@ -502,6 +510,10 @@ a.project-title::after {
   background: $mp-surface;
   border: 1px solid $mp-rule;
   touch-action: pan-y;          // keep vertical scrolling while dragging
+  // --r is registered via @property above, so transitioning it directly
+  // (not just the mask/clip-path that reads it) is what actually makes the
+  // dependent gradient/clip animate smoothly instead of snapping.
+  transition: --r .12s linear;
 
   > * { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
   img { object-fit: cover; }
@@ -535,6 +547,7 @@ a.project-title::after {
     }
   }
 
+  &.dragging { transition: none; }
   &.dragging .art, &.dragging .seam { transition: none; }
 
   // Soft crossfade instead of a hard cut. The traces are the photo's own
@@ -544,10 +557,15 @@ a.project-title::after {
       clip-path: none;
       -webkit-mask-image: linear-gradient(90deg, transparent calc(var(--r) - 9%), #000 calc(var(--r) + 9%));
               mask-image: linear-gradient(90deg, transparent calc(var(--r) - 9%), #000 calc(var(--r) + 9%));
-      transition: -webkit-mask-image .12s linear, mask-image .12s linear;
+      // No transition here: --r itself animates (see .reveal), and this
+      // mask recomputes every frame as a consequence, inherited from it.
     }
     .seam { display: none; }
   }
+
+  // Slow, linear sweep for the on-load intro (full photo -> full wave -> half),
+  // swapped out for the fast pointer-follow transition once it's done.
+  &.intro { transition: --r 1.1s linear; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -92,7 +92,7 @@ Motion planning algorithms for autonomous driving, multiagent cooperation and ra
 [Visiting Researcher - Autonomous Vehicle Systems Laboratory]{.entry-title}\
 Technische Universität München (TUM), DE\
 Velocity profile online optimization for the Indy Autonomous Challenge (IAC) and Abu Dhabi Autonomous Racing League (A2RL). Time-optimal velocity planning and control under dynamic grip constraints.\
-[2025 - present]{.entry-meta}
+[2025]{.entry-meta}
 :::
 :::
 

@@ -494,6 +494,101 @@ a.project-title::after {
   .k { color: $mp-faint; margin-right: .6rem; }
 }
 
+// --- Vertical timeline (About > Background) ---
+.timeline {
+  position: relative;
+  margin: 1.5rem 0 2.25rem;
+  padding-left: 1.75rem;
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: .25rem;
+    top: .3rem;
+    bottom: .3rem;
+    width: 1px;
+    background: $mp-rule;
+  }
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: .9rem;
+
+  &:last-child { padding-bottom: 0; }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1.75rem;
+    top: .35rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: $mp-ink;
+    box-shadow: 0 0 0 3px $mp-bg;
+  }
+}
+.timeline-date {
+  font-family: $font-family-monospace;
+  font-size: .72rem;
+  letter-spacing: .04em;
+  color: $mp-faint;
+  margin-bottom: .2rem;
+}
+.timeline-content { color: $mp-dim; }
+
+// --- Row of outline CTA buttons (About, between intro and Background) ---
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin: 1.75rem 0;
+}
+
+// --- Self-rated skills table (About) ---
+// Levels read by brightness, not colour -- keeps the orange/blue accent
+// rule intact (see hero comment above) instead of a red/amber/green scheme.
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin: 1rem 0 2rem;
+}
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-family: $font-family-monospace;
+    font-size: .66rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: $mp-ghost;
+    margin-bottom: .5rem;
+  }
+  td {
+    padding: .4rem 0;
+    border-bottom: 1px solid $mp-rule;
+  }
+  td:first-child { color: $mp-ink; }
+  td:last-child {
+    text-align: right;
+    font-family: $font-family-monospace;
+    font-size: .68rem;
+    letter-spacing: .03em;
+  }
+  .lv-1 { color: $mp-ink; }
+  .lv-2 { color: $mp-dim; }
+  .lv-3 { color: $mp-faint; }
+}
+@media (max-width: 720px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+
 // --- Reveal component: photo <-> wave portrait ---
 // Two stacked layers. A single custom property `--r` drives everything, so JS
 // only ever writes a percentage  -  no layout thrash, GPU-composited.

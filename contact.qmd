@@ -3,7 +3,7 @@ title: Contact
 toc: false
 ---
 
-Email: [mattia.piazza.eng@unitn.it](mailto:mattia.piazza.eng@unitn.it)
+Email: [mattia.piazza.eng@google.com](mailto:mattia.piazza.eng@google.com)
 
 **Address:** via Sommarive 9, 38123 Trento TN, Italy
 

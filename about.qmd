@@ -1,13 +1,56 @@
 ---
-title: "About Me"
+title: "About"
 ---
 
-**Mattia Piazza** is currently a Researcher and PhD candidate in the **Doctoral Program in Materials, Mechatronics and Systems Engineering ([DRMMSE](https://www.unitn.it/drmmse))** at the [University of Trento](https://webapps.unitn.it/du/it/Persona/PER0221571/Didattica).
-After receiving his high school diploma in 2013, he obtained a bachelor of science degree in **Mechanical Engineering** at the [University of Udine](https://www.uniud.it/it) in 2017, and he achieved a master of science degree in **Mechatronic Engineering** at the [University of Trento](https://www.unitn.it/it) in 2020. He was awarded with a postgraduate scholarship and then a two-year research fellowship grant to expand his thesis research on minimum time optimal control problem for racing vehicles. In 2022, he enrolled in the PhD program, where he now focuses on optimal control algorithms for autonomous driving and Advanced Driver-Assistance Systems (ADAS) for racing and urban vehicles, in collaboration with leading automotive and motorsport partners.
+I grew up wanting to know why things move the way they do. That curiosity
+eventually became a PhD: I build algorithms that find the fastest way a
+vehicle can move without asking for more grip than it has. I'm a PhD
+candidate in the Doctoral Program in Materials, Mechatronics and Systems
+Engineering ([DRMMSE](https://www.unitn.it/drmmse)) at the [University of
+Trento](https://webapps.unitn.it/du/it/Persona/PER0221571/Didattica), where
+my days split between optimal control theory, C++, and convincing a solver
+to converge.
 
-A results-driven mechatronics engineer with a passion for optimization and control systems, he has designed and implemented a prototype control system and a real-time, multiplatform library. He has strong expertise in C++ programming, symbolic computation, and optimal control, with additional experience in cross-platform compilation, low-level software interfaces, and communication protocols (UDP, TCP/IP). He also has hands-on experience with multi-sensor software frameworks (e.g., RTMaps) for hardware-in-the-loop and real-vehicle testing - bridging theoretical research with practical application.
+The common thread across everything I have worked on - minimum lap time
+simulation, real-time velocity planning, maneuver negotiation for
+self-driving cars - is the same question asked at different scales: given
+the physics a vehicle actually has, what is the fastest, safest thing it can
+do right now, and can the answer arrive fast enough to be useful. Off the
+clock, I trade the desk for a mountain: climbing, skiing, mountain biking,
+or grilling for whoever is around.
 
-## Research interests
+<div class="btn-row">
+[Projects](projects.qmd){.btn .btn-outline-primary role="button"}
+[Publications](publications.qmd){.btn .btn-outline-primary role="button"}
+[CV](CV.qmd){.btn .btn-outline-primary role="button"}
+</div>
+
+## Background
+
+::: {.timeline}
+::: {.timeline-item}
+[2022 - present]{.timeline-date}\
+[PhD candidate, optimal control and motion planning for autonomous and racing vehicles, [UniTN](https://www.unitn.it/it)]{.timeline-content}
+:::
+::: {.timeline-item}
+[2025]{.timeline-date}\
+[Visiting researcher, [Autonomous Vehicle Systems Laboratory](https://www.mos.ed.tum.de/en/avs/home/), [TUM](https://www.tum.de/en/)]{.timeline-content}
+:::
+::: {.timeline-item}
+[2020 - 2022]{.timeline-date}\
+[Postgraduate scholarship, then a research fellowship on minimum-time optimal control for racing vehicles, [UniTN](https://www.unitn.it/it)]{.timeline-content}
+:::
+::: {.timeline-item}
+[2017 - 2020]{.timeline-date}\
+[MSc in Mechatronics Engineering, [UniTN](https://www.unitn.it/it)]{.timeline-content}
+:::
+::: {.timeline-item}
+[2013 - 2017]{.timeline-date}\
+[BSc in Mechanical Engineering, [UniUD](https://www.uniud.it/it)]{.timeline-content}
+:::
+:::
+
+## What I work on
 
 - Optimal control for minimum-time trajectory and velocity planning
 - Motion planning and sampling-based algorithms for autonomous and racing vehicles
@@ -15,25 +58,51 @@ A results-driven mechatronics engineer with a passion for optimization and contr
 - Vehicle dynamics and multibody modeling
 - Multi-sensor, hardware-in-the-loop and real-vehicle testing
 
-## Previous works
+## Skills
 
-- Development of complete dynamic model of racing motorcycles for optimal control problem.
-- Development of continuation (homotopy) strategies to solve optimal control problem.
-- Development of regularization expression to model slip dynamic.
-- Matlab interface to connect IPOPT (Interior Point OPTimizer) direct method with PINS (Pins is Not a Solver) indirect method.
-- Matlab 3D internal visualizer for optimal control problem.
-- Matlab interface to convert racetracks from clothoid curves into JSON files and OpenDrive format.
-- Advance Hybrid RRT* algorithm for path planning in dynamic environment
-- Motion Primitive C++ library for speed and acceleration control of vehicles.
+A self-rated cheat sheet - reasonably honest, mostly earned the hard way.
 
-## Projects I was involved
+::: {.skills-grid}
 
-- Automatic racetrack generator for vehicle simulators: Collaboration with a startup to develop a toolchain for automatic generation of racetracks and scenarios for vehicle simulators
-- An advance classical approach algorithm for autonomous driving: Collaboration with an industrial partner inside **VeDi 2025** project financed by MISE (*Ministero dello Sviluppo Economico*).
-- Minimum Lap Time Simulator: Collaboration with an Italian motorcycle team (MotoGP) to develop a toolbox able to compute optimal trajectories and controls for minimum lap time.
-- MPTree: Advance Hybrid RRT* algorithm for path planning in a dynamic environment.
+<table class="skills-table">
+<caption>Languages</caption>
+<tbody>
+<tr><td>C++</td><td class="lv-1">Advanced</td></tr>
+<tr><td>MATLAB</td><td class="lv-1">Advanced</td></tr>
+<tr><td>Maple</td><td class="lv-2">Intermediate</td></tr>
+<tr><td>Mathematica</td><td class="lv-2">Intermediate</td></tr>
+<tr><td>Python</td><td class="lv-2">Intermediate</td></tr>
+<tr><td>Ruby</td><td class="lv-3">Base</td></tr>
+<tr><td>Simulink</td><td class="lv-3">Base</td></tr>
+</tbody>
+</table>
+
+<table class="skills-table">
+<caption>Tools</caption>
+<tbody>
+<tr><td>git / GitHub</td><td class="lv-1">Advanced</td></tr>
+<tr><td>LaTeX / Quarto</td><td class="lv-1">Advanced</td></tr>
+<tr><td>PINS</td><td class="lv-1">Advanced</td></tr>
+<tr><td>CMake / Make</td><td class="lv-2">Intermediate</td></tr>
+<tr><td>CarMaker</td><td class="lv-2">Intermediate</td></tr>
+<tr><td>RTMaps</td><td class="lv-3">Base</td></tr>
+<tr><td>CasADi</td><td class="lv-3">Base</td></tr>
+</tbody>
+</table>
+
+<table class="skills-table">
+<caption>Additional</caption>
+<tbody>
+<tr><td>UniTN bureaucracy</td><td class="lv-1">Black belt</td></tr>
+<tr><td>ROS 2</td><td class="lv-3">Minimal experience</td></tr>
+<tr><td>F1TENTH</td><td class="lv-3">Minimal experience</td></tr>
+</tbody>
+</table>
+
+:::
 
 ## Collaborations
 
 - [DRIVEWISE](https://drivewise.github.io) - Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.
 - [neu4mes](https://neu4mes.github.io) - collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento.
+- [AVS](https://www.mos.ed.tum.de/en/avs/home/) - Autonomous Vehicle Systems Laboratory, TUM. Principal investigator: [Prof. Johannes Betz](https://www.mos.ed.tum.de/en/avs/team/prof-dr-ing-johannes-betz/); visiting researcher, 2025.

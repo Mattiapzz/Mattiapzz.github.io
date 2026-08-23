@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="MP">
+  <title>MP</title>
+  <g fill="none" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M7 30 V10 L15 22 L23 10 V30" stroke="#ECE9E3"/>
+    <path d="M23 10 H28.5 A5 5 0 0 1 28.5 20 H23" stroke="#1E90FF"/>
+  </g>
+</svg>

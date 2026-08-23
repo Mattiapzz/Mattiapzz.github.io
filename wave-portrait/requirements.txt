@@ -1,0 +1,11 @@
+# pip alternative to environment.yml — same four packages.
+#
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# Lower bounds only. Verified against numpy 2.4.4, pillow 12.1.1,
+# scikit-image 0.26.0, scipy 1.17.1 on Python 3.12.3.
+numpy>=1.26
+pillow>=10.0
+scikit-image>=0.22
+scipy>=1.11

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 80" width="440" height="80" role="img" aria-label="Mattia Piazza">
+  <g transform="translate(0,8) scale(0.368)" fill="none" stroke-width="13" stroke-linecap="round" stroke-linejoin="miter">
+    <path d="M10 161 L90 41 L148 84" stroke="currentColor"/>
+    <path d="M239 81 L300 161" stroke="currentColor"/>
+    <path d="M100 161 L190 16 L239 81" stroke="#1E90FF"/>
+    <path d="M131 111 A56.2 56.2 0 0 0 239 81" stroke="#1E90FF"/>
+  </g>
+  <text x="138" y="52" fill="currentColor" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="31" font-weight="500" letter-spacing="0.6">Mattia Piazza</text>
+</svg>

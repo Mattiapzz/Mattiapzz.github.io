@@ -1,18 +1,24 @@
 project:
   type: website
   output-dir: docs
-  resources: [data, google9d245cf9d8e764f1.html]
+  resources: [data, assets, google9d245cf9d8e764f1.html]
+  render:
+    - "*.qmd"
+    - "!wave/"
+    - "!wave-portrait/"
 
 website:
   title: "Mattia Piazza"
   site-url: https://mattiapzz.github.io
-  description: "Doctoral researcher in optimal control and motion planning for autonomous and racing vehicles, University of Trento."
-  favicon: data/favicon.png
+  description: "Mechatronics engineer and software developer. Planning and control for vehicles that have to work."
+  favicon: assets/logoMP/mp-favicon.svg
   open-graph:
     image: data/og-image.jpg
   twitter-card:
     image: data/og-image.jpg
   navbar:
+    logo: assets/logoMP/mp-mark-nav.svg
+    title: false
     search: true
     right:
       - href: index.qmd
@@ -32,8 +38,7 @@ website:
 
 format:
   html:
-    theme: [darkly, flatly]
-    css: styles.css
+    theme: custom.scss
     toc: true
 
 

@@ -1,27 +1,48 @@
 ---
-title: Mattia Piazza
-image: data/bio-photo-optimized.jpg
+title: "Mattia Piazza"
+pagetitle: "Mattia Piazza"
+description-meta: "Mechatronics engineer and software developer. Planning and control for vehicles that have to work."
+page-layout: full
 toc: false
-about:
-  id: hero-heading
-  image-width: 12em
-  template: solana
-  image-shape: round
-  links:
-    - icon: linkedin
-      href: https://www.linkedin.com/in/mattiapiazza/
-    - icon: github
-      href: https://github.com/mattiapzz
-    - icon: envelope
-      href: mailto:mattia.piazza.eng@unitn.it
-    - text: "{{< ai google-scholar >}}"
-      href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
-    - text: "{{< ai orcid >}}"
-      href: https://orcid.org/0000-0003-0182-5867
+anchor-sections: false
+include-after-body:
+  - text: |
+      <script src="assets/reveal.js" defer></script>
 ---
 
-:::{#hero-heading}
+::: {.hero}
 
-Mattia Piazza designs algorithms that push vehicles to their limits — from MotoGP motorcycles to autonomous cars — using optimal control and real-time motion planning. He is a PhD researcher at the University of Trento, currently working on [FBGA](https://github.com/DRIVEWISE/FBGA), a forward-backward method for time-optimal velocity planning under generic acceleration constraints. Off the clock, he trades the desk for a mountain.
+::: {}
+
+# Mattia Piazza {.hero-name}
+
+::: {.hero-role}
+Mechatronics engineer | Software developer
+:::
+
+::: {.hero-statement}
+Planning and control for vehicles that *have to work.*
+:::
+
+::: {.hero-social}
+[github](https://github.com/mattiapzz)
+[linkedin](https://www.linkedin.com/in/mattiapiazza/)
+[scholar](https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao)
+[orcid](https://orcid.org/0000-0003-0182-5867)
+:::
+
+:::
+
+```{=html}
+<div class="reveal soft" data-reveal="pointer" tabindex="0" role="slider"
+     aria-label="Reveal the portrait from its wave rendering"
+     aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+  <img src="assets/wave.svg" alt="" aria-hidden="true">
+  <div class="art">
+    <img src="assets/portrait.jpg" alt="Mattia Piazza">
+  </div>
+  <div class="seam"></div>
+</div>
+```
 
 :::

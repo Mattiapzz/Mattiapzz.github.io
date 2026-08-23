@@ -5,7 +5,7 @@ title: "About Me"
 **Mattia Piazza** is currently a Researcher and PhD candidate in the **Doctoral Program in Materials, Mechatronics and Systems Engineering ([DRMMSE](https://www.unitn.it/drmmse))** at the [University of Trento](https://webapps.unitn.it/du/it/Persona/PER0221571/Didattica).
 After receiving his high school diploma in 2013, he obtained a bachelor of science degree in **Mechanical Engineering** at the [University of Udine](https://www.uniud.it/it) in 2017, and he achieved a master of science degree in **Mechatronic Engineering** at the [University of Trento](https://www.unitn.it/it) in 2020. He was awarded with a postgraduate scholarship and then a two-year research fellowship grant to expand his thesis research on minimum time optimal control problem for racing vehicles. In 2022, he enrolled in the PhD program, where he now focuses on optimal control algorithms for autonomous driving and Advanced Driver-Assistance Systems (ADAS) for racing and urban vehicles, in collaboration with leading automotive and motorsport partners.
 
-A results-driven mechatronics engineer with a passion for optimization and control systems, he has designed and implemented a prototype control system and a real-time, multiplatform library. He has strong expertise in C++ programming, symbolic computation, and optimal control, with additional experience in cross-platform compilation, low-level software interfaces, and communication protocols (UDP, TCP/IP). He also has hands-on experience with multi-sensor software frameworks (e.g., RTMaps) for hardware-in-the-loop and real-vehicle testing — bridging theoretical research with practical application.
+A results-driven mechatronics engineer with a passion for optimization and control systems, he has designed and implemented a prototype control system and a real-time, multiplatform library. He has strong expertise in C++ programming, symbolic computation, and optimal control, with additional experience in cross-platform compilation, low-level software interfaces, and communication protocols (UDP, TCP/IP). He also has hands-on experience with multi-sensor software frameworks (e.g., RTMaps) for hardware-in-the-loop and real-vehicle testing - bridging theoretical research with practical application.
 
 ## Research interests
 
@@ -35,5 +35,5 @@ A results-driven mechatronics engineer with a passion for optimization and contr
 
 ## Collaborations
 
-- [DRIVEWISE](https://drivewise.github.io) — Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.
-- [neu4mes](https://neu4mes.github.io) — collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento.
+- [DRIVEWISE](https://drivewise.github.io) - Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.
+- [neu4mes](https://neu4mes.github.io) - collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento.

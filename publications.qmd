@@ -22,7 +22,7 @@ title: Publications
   <div class="pub-body">
     <div class="pub-title">Real-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints</div>
     <div class="pub-authors"><strong>M. Piazza</strong>, M. Piccinini, S. Taddei, F. Biral, E. Bertolazzi</div>
-    <div class="pub-venue">IEEE Robotics and Automation Letters, vol. 11, no. 2, pp. 1674–1681, 2026</div>
+    <div class="pub-venue">IEEE Robotics and Automation Letters, vol. 11, no. 2, pp. 1674-1681, 2026</div>
     <div class="pub-links"><a class="pub-badge" href="https://doi.org/10.1109/LRA.2025.3643297" target="_blank" rel="noopener">DOI</a></div>
   </div>
 </div>
@@ -52,7 +52,7 @@ title: Publications
   <div class="pub-body">
     <div class="pub-title">A Physics-Driven Artificial Agent for Online Time-Optimal Vehicle Motion Planning and Control</div>
     <div class="pub-authors">M. Piccinini, S. Taddei, M. Larcher, <strong>M. Piazza</strong>, F. Biral</div>
-    <div class="pub-venue">IEEE Access, vol. 11, pp. 46344–46372, 2023</div>
+    <div class="pub-venue">IEEE Access, vol. 11, pp. 46344-46372, 2023</div>
     <div class="pub-links"><a class="pub-badge" href="https://doi.org/10.1109/ACCESS.2023.3274836" target="_blank" rel="noopener">DOI</a></div>
   </div>
 </div>
@@ -116,7 +116,7 @@ title: Publications
   <div class="pub-body">
     <div class="pub-title">MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance</div>
     <div class="pub-authors"><strong>M. Piazza</strong>, M. Piccinini, S. Taddei, F. Biral</div>
-    <div class="pub-venue">IFAC-PapersOnLine, vol. 58, no. 10, pp. 146–153, 2024</div>
+    <div class="pub-venue">IFAC-PapersOnLine, vol. 58, no. 10, pp. 146-153, 2024</div>
     <div class="pub-links"><a class="pub-badge" href="https://doi.org/10.1016/j.ifacol.2024.07.332" target="_blank" rel="noopener">DOI</a></div>
   </div>
 </div>
@@ -126,7 +126,7 @@ title: Publications
   <div class="pub-body">
     <div class="pub-title">Impacts of ggv Constraints Formulations on Online Minimum-Time Vehicle Trajectory Planning</div>
     <div class="pub-authors">M. Piccinini, S. Taddei, <strong>M. Piazza</strong>, F. Biral</div>
-    <div class="pub-venue">IFAC-PapersOnLine, vol. 58, no. 10, pp. 87–93, 2024</div>
+    <div class="pub-venue">IFAC-PapersOnLine, vol. 58, no. 10, pp. 87-93, 2024</div>
     <div class="pub-links"><a class="pub-badge" href="https://doi.org/10.1016/j.ifacol.2024.07.323" target="_blank" rel="noopener">DOI</a></div>
   </div>
 </div>
@@ -160,7 +160,7 @@ title: Publications
 <div class="pub-card">
   <div class="pub-thumb-placeholder">ICRA 2026</div>
   <div class="pub-body">
-    <div class="pub-title">Nnodely – Neuralize Your Model</div>
+    <div class="pub-title">Nnodely - Neuralize Your Model</div>
     <div class="pub-authors">G. P. Rosati Papini, A. Plebe, M. Sharifzadeh, <strong>M. Piazza</strong>, <em>et al.</em></div>
     <div class="pub-venue">IEEE ICRA 2026, Wien, Austria, 2026 (Late breaking results)</div>
     <div class="pub-links"><a class="pub-badge" href="https://github.com/tonegas/nnodely" target="_blank" rel="noopener">Code</a></div>
@@ -174,7 +174,7 @@ title: Publications
 
 MS theses in Mechatronics Engineering, University of Trento, that I supervised.
 
-- **2026** — Sabrina Ciuffoletti, *Modular Optimization-Based Motion Planner for Autonomous Agents: Application on Autonomous Vehicles in Structured and Unstructured Environments*. Supervisors: Gastone Pietro Rosati Papini, Mattia Piazza.
-- **2025** — Mattia Pettene, *Development of a Motion Primitive based Planner for Autonomous Driving Applications*. Supervisors: Francesco Biral, Mattia Piazza.
-- **2024** — Annachiara D'Aquilio, *Optimal Trajectory Planning for Kernels of CNC Machine Tools*. Supervisors: Enrico Bertolazzi, Paolo Bosetti, Mattia Piazza.
-- **2023** — Marco Grano, *Design and Optimization of a Speed Controller for Cooperative Adaptive Cruise Control (C-ACC)*. Supervisors: Francesco Biral, Mattia Piazza, Juan Pablo Salmoiraghi.
+- **2026** - Sabrina Ciuffoletti, *Modular Optimization-Based Motion Planner for Autonomous Agents: Application on Autonomous Vehicles in Structured and Unstructured Environments*. Supervisors: Gastone Pietro Rosati Papini, Mattia Piazza.
+- **2025** - Mattia Pettene, *Development of a Motion Primitive based Planner for Autonomous Driving Applications*. Supervisors: Francesco Biral, Mattia Piazza.
+- **2024** - Annachiara D'Aquilio, *Optimal Trajectory Planning for Kernels of CNC Machine Tools*. Supervisors: Enrico Bertolazzi, Paolo Bosetti, Mattia Piazza.
+- **2023** - Marco Grano, *Design and Optimization of a Speed Controller for Cooperative Adaptive Cruise Control (C-ACC)*. Supervisors: Francesco Biral, Mattia Piazza, Juan Pablo Salmoiraghi.

@@ -1,0 +1,15 @@
+# Exact versions portrait_wave.py was verified against — use this one if the
+# output ever stops matching the frozen artwork.
+#
+#   conda env create -f environment-lock.yml
+name: wave-portrait-lock
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12.3
+  - numpy=2.4.4
+  - pillow=12.1.1
+  - scikit-image=0.26.0
+  - scipy=1.17.1

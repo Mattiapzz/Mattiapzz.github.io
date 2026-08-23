@@ -1,0 +1,453 @@
+/*-- scss:defaults --*/
+
+// --- Fonts ---
+$font-family-sans-serif: "Newsreader", Georgia, "Times New Roman", serif !default;
+$font-family-monospace:  "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace !default;
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300&family=IBM+Plex+Mono:wght@400;500&display=swap" !default;
+
+// --- Palette ---
+// Orange is DISPLAY ONLY (once per page). Blue is INTERACTIVE ONLY.
+$mp-bg:      #111310;
+$mp-ink:     #ECE9E3;
+$mp-dim:     #96928A;
+$mp-faint:   #63605A;
+$mp-ghost:   #4A4844;
+$mp-rule:    #252724;
+$mp-surface: #191B18;
+$mp-orange:  #E8722F;
+$mp-blue:    #1E90FF;
+$mp-blue-lo: #17395C;
+
+$body-bg:    $mp-bg !default;
+$body-color: $mp-ink !default;
+$link-color: $mp-blue !default;
+$link-hover-color: $mp-blue !default;
+$border-color: $mp-rule !default;
+
+// Nav background === page background, no border (per Canelón)
+$navbar-bg: $mp-bg !default;
+$navbar-fg: $mp-faint !default;
+$navbar-hl: $mp-ink !default;
+$footer-bg: $mp-bg !default;
+$footer-fg: $mp-faint !default;
+
+$body-font-size: 1rem !default;
+$headings-font-weight: 200 !default;
+$code-color: $mp-dim !default;
+$code-bg: $mp-surface !default;
+
+$grid-body-width: 960px !default;
+
+/*-- scss:rules --*/
+
+// --- Reset / base ---
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding-block: 1.6rem;
+
+  .navbar-nav .nav-link {
+    font-family: $font-family-monospace;
+    font-size: .75rem;
+    letter-spacing: .03em;
+    color: $mp-faint;
+    transition: color .18s ease;
+
+    &:hover, &:focus-visible { color: $mp-ink; }
+    &.active { color: $mp-ink; }
+  }
+
+  .navbar-brand img { height: 30px; width: auto; }
+}
+
+// The hero page supplies its own <h1> inside .hero  -  Quarto's automatic
+// title-block header would otherwise duplicate the name above it.
+.page-layout-full #title-block-header { display: none; }
+
+// --- Hero ---
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2.5rem;
+  align-items: start;
+  padding: 8.75rem 4rem 10rem 0;
+}
+
+.hero-name {
+  margin: 0 0 .6rem;
+  font-size: clamp(2.5rem, 6.6vw, 4.25rem);
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: $mp-ink;
+}
+
+.hero-role {
+  font-family: $font-family-monospace;
+  font-size: .72rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: $mp-faint;
+  margin: 0 0 1.25rem;
+}
+
+.hero-statement {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  font-weight: 200;
+  line-height: 1.35;
+  letter-spacing: -.012em;
+  color: $mp-dim;
+  max-width: 22ch;
+
+  // The single display-orange moment on the page.
+  em, strong {
+    font-style: italic;
+    font-weight: 200;
+    color: $mp-orange;
+  }
+}
+
+.hero-cta {
+  display: inline-block;
+  font-family: $font-family-monospace;
+  font-size: .82rem;
+  color: $mp-blue;
+  text-decoration: none;
+  border-bottom: 1px solid $mp-blue-lo;
+  padding-bottom: .3rem;
+  transition: border-color .25s ease;
+
+  &:hover, &:focus-visible { border-color: $mp-blue; }
+}
+
+.hero-social {
+  display: flex;
+  gap: .9rem;
+  margin-top: .75rem;
+
+  a {
+    font-family: $font-family-monospace;
+    font-size: .75rem;
+    color: $mp-faint;
+    text-decoration: none;
+    transition: color .18s ease;
+
+    &:hover, &:focus-visible { color: $mp-blue; }
+  }
+}
+
+.hero-photo {
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border: 1px solid $mp-rule;
+  }
+}
+
+// --- Shared bits for later pages ---
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: .66rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: $mp-ghost;
+}
+
+.caption {
+  font-family: $font-family-monospace;
+  font-size: .66rem;
+  color: $mp-ghost;
+  letter-spacing: .05em;
+}
+
+// Hook sentence  -  one per research area / project (Weidig device)
+.hook {
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 300;
+  color: $mp-dim;
+  margin: 0 0 .6rem;
+}
+
+// Paper / Demo / Code triple (Rascia device)
+.links-triple {
+  display: flex;
+  gap: 1.1rem;
+  font-family: $font-family-monospace;
+  font-size: .75rem;
+
+  a {
+    color: $mp-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $mp-blue-lo;
+    padding-bottom: .15rem;
+
+    &:hover, &:focus-visible { border-color: $mp-blue; }
+  }
+}
+
+// ASCII art blocks  -  parked, but the rules are here when needed
+.ascii {
+  font-family: $font-family-monospace;
+  white-space: pre;
+  overflow-x: auto;
+  line-height: 1.04;
+  color: #2B2E29;
+  margin: 0;
+
+  .fast { color: $mp-orange; }
+  .mid  { color: #7A5B41; }
+}
+
+hr, .content hr { border-color: $mp-rule; opacity: 1; }
+
+// --- Education / experience / projects entries (CV) ---
+.entry-list {
+  display: grid;
+  gap: .75rem;
+  margin: 1rem 0;
+}
+.entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid $mp-rule;
+  border-radius: .5rem;
+  padding: 1rem 1.25rem;
+}
+.entry-logo {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: .25rem;
+  background: #fff;
+  padding: .25rem;
+}
+.entry-logos {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  flex-shrink: 0;
+}
+.entry-logos p {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  margin: 0;
+}
+.entry-logos .entry-logo { margin: 0; }
+.entry-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: .25rem;
+  background: $mp-blue-lo;
+  color: $mp-blue;
+  font-size: 1.15rem;
+}
+.entry-icon p {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.entry-body { flex: 1; min-width: 0; }
+.entry .entry-title { font-weight: 600; color: $mp-ink; }
+.entry .entry-meta { font-size: .9rem; color: $mp-dim; }
+
+// --- Publication cards ---
+.pub-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.pub-card {
+  display: flex;
+  gap: 1.25rem;
+  border: 1px solid $mp-rule;
+  border-radius: .5rem;
+  padding: 1.25rem;
+}
+.pub-thumb {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: .25rem;
+  flex-shrink: 0;
+  background: $mp-surface;
+}
+.pub-thumb-placeholder {
+  width: 100px;
+  height: 130px;
+  border-radius: .25rem;
+  flex-shrink: 0;
+  background: $mp-surface;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: $font-family-monospace;
+  font-size: .68rem;
+  color: $mp-ghost;
+  padding: .5rem;
+}
+.pub-body { flex: 1; min-width: 0; }
+.pub-title { font-weight: 600; color: $mp-ink; margin-bottom: .3rem; }
+.pub-authors { font-size: .9rem; color: $mp-dim; margin-bottom: .3rem; }
+.pub-venue {
+  font-family: $font-family-monospace;
+  font-size: .78rem;
+  color: $mp-faint;
+  margin-bottom: .6rem;
+}
+.pub-links { display: flex; gap: .5rem; flex-wrap: wrap; }
+.pub-badge {
+  display: inline-block;
+  font-family: $font-family-monospace;
+  font-size: .72rem;
+  font-weight: 500;
+  padding: .25rem .6rem;
+  border-radius: .3rem;
+  text-decoration: none;
+  color: $mp-blue;
+  border: 1px solid $mp-blue-lo;
+  transition: border-color .18s ease;
+
+  &:hover, &:focus-visible { border-color: $mp-blue; }
+}
+@media (max-width: 575.98px) {
+  .pub-card { flex-direction: column; }
+  .pub-thumb, .pub-thumb-placeholder { width: 100%; height: 160px; }
+}
+
+// --- Responsive ---
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    align-items: start;
+    padding: 4rem 0 5rem;
+  }
+  .hero-photo, .reveal { max-width: 220px; }
+  .ascii { display: none; }   // unreadable below ~470px
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+// --- Carried over from SITE_PLAN.md Phase 1 ---
+// Responsive map embed  -  replaces the fixed-width iframe on contact.qmd that
+// caused horizontal scroll across the whole page.
+.responsive-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+}
+
+// The trestles mobile fixes from Phase 1 are intentionally NOT here:
+// the about-template layout is replaced entirely by .hero above.
+
+// Education / project lines previously written as `A | B | C` paragraphs wrap
+// into ragged blobs on a 390px screen. Use this instead of pipe separators.
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-family: $font-family-monospace;
+    font-size: .78rem;
+    color: $mp-dim;
+    padding: .35rem 0;
+    border-bottom: 1px solid $mp-rule;
+  }
+
+  .k { color: $mp-faint; margin-right: .6rem; }
+}
+
+// --- Reveal component: photo <-> wave portrait ---
+// Two stacked layers. A single custom property `--r` drives everything, so JS
+// only ever writes a percentage  -  no layout thrash, GPU-composited.
+//
+// The clipped layer MUST carry its own opaque background: clip-path clips the
+// element's background too, so without it the photo shows through the gaps
+// between traces and nothing appears to change.
+.reveal {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  --r: 50%;
+  background: $mp-surface;
+  border: 1px solid $mp-rule;
+  touch-action: pan-y;          // keep vertical scrolling while dragging
+
+  > * { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  img { object-fit: cover; }
+
+  .art {
+    clip-path: inset(0 0 0 var(--r));
+    background: $mp-bg;
+    transition: clip-path .12s linear;
+
+    svg, img { width: 100%; height: 100%; display: block; }
+  }
+
+  .seam {
+    left: var(--r);
+    width: 1px;
+    inset-block: 0;
+    background: $mp-blue;
+    opacity: .9;
+    transition: left .12s linear;
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 26px; height: 26px;
+      transform: translate(-50%, -50%);
+      border: 1px solid $mp-blue;
+      border-radius: 50%;
+      background: rgba(17, 19, 16, .65);
+    }
+  }
+
+  &.dragging .art, &.dragging .seam { transition: none; }
+
+  // Soft crossfade instead of a hard cut. The traces are the photo's own
+  // luminance, so the two line up through the transition.
+  &.soft {
+    .art {
+      clip-path: none;
+      -webkit-mask-image: linear-gradient(90deg, transparent calc(var(--r) - 9%), #000 calc(var(--r) + 9%));
+              mask-image: linear-gradient(90deg, transparent calc(var(--r) - 9%), #000 calc(var(--r) + 9%));
+      transition: -webkit-mask-image .12s linear, mask-image .12s linear;
+    }
+    .seam { display: none; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal .art, .reveal .seam { transition: none; }
+}
+
+// The wave SVG is loaded as an <img>, so size it like the photo beneath it.
+.reveal .art img { object-fit: cover; }

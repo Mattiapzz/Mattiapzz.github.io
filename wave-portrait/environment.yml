@@ -1,0 +1,18 @@
+# Conda environment for portrait_wave.py
+#
+#   conda env create -f environment.yml
+#   conda activate wave-portrait
+#   python portrait_wave.py photo.jpg -o assets/wave.svg
+#
+# conda-forge is required: scikit-image on the `defaults` channel lags badly.
+name: wave-portrait
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - pillow>=10.0
+  - scikit-image>=0.22
+  - scipy>=1.11

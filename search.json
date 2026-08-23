@@ -151,7 +151,7 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Email: mattia.piazza.eng@unitn.it\nAddress: via Sommarive 9, 38123 Trento TN, Italy\n\n  \n\n\n\n\n Back to top"
+    "text": "Email: mattia.piazza.eng@google.com\nAddress: via Sommarive 9, 38123 Trento TN, Italy\n\n  \n\n\n\n\n Back to top"
   },
   {
     "objectID": "CV.html",
@@ -172,7 +172,7 @@
     "href": "CV.html#working-experience",
     "title": "Curriculum Vitae",
     "section": "Working experience",
-    "text": "Working experience\n\n\n\n\nPhD Researcher - Doctoral program in Mechatronics and Systems Engineering\nUniversity of Trento, IT\nMotion planning algorithms for autonomous driving, multiagent cooperation and racing scenarios. Multiplatform real-time control library. MLT simulator for MotoGP with indirect optimal control methods.\n2022 - present\n\n\n\n\n\nVisiting Researcher - Autonomous Vehicle Systems Laboratory\nTechnische Universität München (TUM), DE\nVelocity profile online optimization for the Indy Autonomous Challenge (IAC) and Abu Dhabi Autonomous Racing League (A2RL). Time-optimal velocity planning and control under dynamic grip constraints.\n2025 - present\n\n\n\n\n\nResearch Fellowship (Research grant decree n. 205/2020)\nUniversity of Trento, IT - Solution algorithms comparison for minimum-time optimal control problems for racing vehicles.\n2021 - 2022\n\n\n\n\n\nResearch Scholarship (Decree n. 74/2020)\nUniversity of Trento, IT - Minimum Time Manoeuvres of complex vehicle models described with DAEs.\n2020 - 2021"
+    "text": "Working experience\n\n\n\n\nPhD Researcher - Doctoral program in Mechatronics and Systems Engineering\nUniversity of Trento, IT\nMotion planning algorithms for autonomous driving, multiagent cooperation and racing scenarios. Multiplatform real-time control library. MLT simulator for MotoGP with indirect optimal control methods.\n2022 - present\n\n\n\n\n\nVisiting Researcher - Autonomous Vehicle Systems Laboratory\nTechnische Universität München (TUM), DE\nVelocity profile online optimization for the Indy Autonomous Challenge (IAC) and Abu Dhabi Autonomous Racing League (A2RL). Time-optimal velocity planning and control under dynamic grip constraints.\n2025\n\n\n\n\n\nResearch Fellowship (Research grant decree n. 205/2020)\nUniversity of Trento, IT - Solution algorithms comparison for minimum-time optimal control problems for racing vehicles.\n2021 - 2022\n\n\n\n\n\nResearch Scholarship (Decree n. 74/2020)\nUniversity of Trento, IT - Minimum Time Manoeuvres of complex vehicle models described with DAEs.\n2020 - 2021"
   },
   {
     "objectID": "CV.html#projects",
@@ -226,37 +226,37 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "About",
     "section": "",
-    "text": "Mattia Piazza is currently a Researcher and PhD candidate in the Doctoral Program in Materials, Mechatronics and Systems Engineering (DRMMSE) at the University of Trento. After receiving his high school diploma in 2013, he obtained a bachelor of science degree in Mechanical Engineering at the University of Udine in 2017, and he achieved a master of science degree in Mechatronic Engineering at the University of Trento in 2020. He was awarded with a postgraduate scholarship and then a two-year research fellowship grant to expand his thesis research on minimum time optimal control problem for racing vehicles. In 2022, he enrolled in the PhD program, where he now focuses on optimal control algorithms for autonomous driving and Advanced Driver-Assistance Systems (ADAS) for racing and urban vehicles, in collaboration with leading automotive and motorsport partners.\nA results-driven mechatronics engineer with a passion for optimization and control systems, he has designed and implemented a prototype control system and a real-time, multiplatform library. He has strong expertise in C++ programming, symbolic computation, and optimal control, with additional experience in cross-platform compilation, low-level software interfaces, and communication protocols (UDP, TCP/IP). He also has hands-on experience with multi-sensor software frameworks (e.g., RTMaps) for hardware-in-the-loop and real-vehicle testing - bridging theoretical research with practical application."
+    "text": "I grew up wanting to know why things move the way they do. That curiosity eventually became a PhD: I build algorithms that find the fastest way a vehicle can move without asking for more grip than it has. I'm a PhD candidate in the Doctoral Program in Materials, Mechatronics and Systems Engineering (DRMMSE) at the University of Trento, where my days split between optimal control theory, C++, and convincing a solver to converge.\nThe common thread across everything I have worked on - minimum lap time simulation, real-time velocity planning, maneuver negotiation for self-driving cars - is the same question asked at different scales: given the physics a vehicle actually has, what is the fastest, safest thing it can do right now, and can the answer arrive fast enough to be useful. Off the clock, I trade the desk for a mountain: climbing, skiing, mountain biking, or grilling for whoever is around."
   },
   {
-    "objectID": "about.html#research-interests",
-    "href": "about.html#research-interests",
-    "title": "About Me",
-    "section": "Research interests",
-    "text": "Research interests\n\nOptimal control for minimum-time trajectory and velocity planning\nMotion planning and sampling-based algorithms for autonomous and racing vehicles\nAdvanced Driver-Assistance Systems (ADAS) and safety assurance\nVehicle dynamics and multibody modeling\nMulti-sensor, hardware-in-the-loop and real-vehicle testing"
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\n\n\n2022 - present\nPhD candidate, optimal control and motion planning for autonomous and racing vehicles, UniTN\n\n\n2025\nVisiting researcher, Autonomous Vehicle Systems Laboratory, TUM\n\n\n2020 - 2022\nPostgraduate scholarship, then a research fellowship on minimum-time optimal control for racing vehicles, UniTN\n\n\n2017 - 2020\nMSc in Mechatronics Engineering, UniTN\n\n\n2013 - 2017\nBSc in Mechanical Engineering, UniUD"
   },
   {
-    "objectID": "about.html#previous-works",
-    "href": "about.html#previous-works",
-    "title": "About Me",
-    "section": "Previous works",
-    "text": "Previous works\n\nDevelopment of complete dynamic model of racing motorcycles for optimal control problem.\nDevelopment of continuation (homotopy) strategies to solve optimal control problem.\nDevelopment of regularization expression to model slip dynamic.\nMatlab interface to connect IPOPT (Interior Point OPTimizer) direct method with PINS (Pins is Not a Solver) indirect method.\nMatlab 3D internal visualizer for optimal control problem.\nMatlab interface to convert racetracks from clothoid curves into JSON files and OpenDrive format.\nAdvance Hybrid RRT* algorithm for path planning in dynamic environment\nMotion Primitive C++ library for speed and acceleration control of vehicles."
+    "objectID": "about.html#what-i-work-on",
+    "href": "about.html#what-i-work-on",
+    "title": "About",
+    "section": "What I work on",
+    "text": "What I work on\n\nOptimal control for minimum-time trajectory and velocity planning\nMotion planning and sampling-based algorithms for autonomous and racing vehicles\nAdvanced Driver-Assistance Systems (ADAS) and safety assurance\nVehicle dynamics and multibody modeling\nMulti-sensor, hardware-in-the-loop and real-vehicle testing"
   },
   {
-    "objectID": "about.html#projects-i-was-involved",
-    "href": "about.html#projects-i-was-involved",
-    "title": "About Me",
-    "section": "Projects I was involved",
-    "text": "Projects I was involved\n\nAutomatic racetrack generator for vehicle simulators: Collaboration with a startup to develop a toolchain for automatic generation of racetracks and scenarios for vehicle simulators\nAn advance classical approach algorithm for autonomous driving: Collaboration with an industrial partner inside VeDi 2025 project financed by MISE (Ministero dello Sviluppo Economico).\nMinimum Lap Time Simulator: Collaboration with an Italian motorcycle team (MotoGP) to develop a toolbox able to compute optimal trajectories and controls for minimum lap time.\nMPTree: Advance Hybrid RRT* algorithm for path planning in a dynamic environment."
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\nA self-rated cheat sheet - reasonably honest, mostly earned the hard way.\n\n\n\nLanguages\n\n\n\n\nC++\n\n\nAdvanced\n\n\n\n\nMATLAB\n\n\nAdvanced\n\n\n\n\nMaple\n\n\nIntermediate\n\n\n\n\nMathematica\n\n\nIntermediate\n\n\n\n\nPython\n\n\nIntermediate\n\n\n\n\nRuby\n\n\nBase\n\n\n\n\nSimulink\n\n\nBase\n\n\n\n\n\n\nTools\n\n\n\n\ngit / GitHub\n\n\nAdvanced\n\n\n\n\nLaTeX / Quarto\n\n\nAdvanced\n\n\n\n\nPINS\n\n\nAdvanced\n\n\n\n\nCMake / Make\n\n\nIntermediate\n\n\n\n\nCarMaker\n\n\nIntermediate\n\n\n\n\nRTMaps\n\n\nBase\n\n\n\n\nCasADi\n\n\nBase\n\n\n\n\n\n\nAdditional\n\n\n\n\nUniTN bureaucracy\n\n\nBlack belt\n\n\n\n\nROS 2\n\n\nMinimal experience\n\n\n\n\nF1TENTH\n\n\nMinimal experience"
   },
   {
     "objectID": "about.html#collaborations",
     "href": "about.html#collaborations",
-    "title": "About Me",
+    "title": "About",
     "section": "Collaborations",
-    "text": "Collaborations\n\nDRIVEWISE - Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.\nneu4mes - collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento."
+    "text": "Collaborations\n\nDRIVEWISE - Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.\nneu4mes - collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento.\nAVS - Autonomous Vehicle Systems Laboratory, TUM. Principal investigator: Prof. Johannes Betz; visiting researcher, 2025."
   },
   {
     "objectID": "index.html",

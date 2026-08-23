@@ -84,6 +84,13 @@
     "text": "Why a browser tool\nMost telemetry from simulation runs or vehicle logs is a CSV of time-stamped channels, and the fastest way to look at it shouldn't require opening a notebook or writing a plotting script. Because it's a static page with no server component, the same file works as a local double-click tool and as a hosted page - the file itself never has to leave the machine."
   },
   {
+    "objectID": "projects/scope.html#try-it",
+    "href": "projects/scope.html#try-it",
+    "title": "scope",
+    "section": "Try it",
+    "text": "Try it"
+  },
+  {
     "objectID": "projects/scope.html#status",
     "href": "projects/scope.html#status",
     "title": "scope",
@@ -126,32 +133,81 @@
     "text": "Status\nPublic C++/Python library, ongoing personal project.\n\nCode"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "projects/dashboard.html",
+    "href": "projects/dashboard.html",
+    "title": "Dashboard",
     "section": "",
-    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - present"
+    "text": "&lt;- All projects\nPersonal project | in progress"
   },
   {
-    "objectID": "projects.html#funded-institutional",
-    "href": "projects.html#funded-institutional",
-    "title": "Projects",
-    "section": "",
-    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - present"
+    "objectID": "projects/dashboard.html#overview",
+    "href": "projects/dashboard.html#overview",
+    "title": "Dashboard",
+    "section": "Overview",
+    "text": "Overview\nA fictitious digital car instrument cluster - speedometer, tachometer, gear indicator, shift lights, throttle and brake bars - built as a static, shareable web page. It can run a built-in demo animation, show fixed numbers, replay a CSV log, or render live data pushed over a WebSocket."
   },
   {
-    "objectID": "projects.html#personal-open-source",
-    "href": "projects.html#personal-open-source",
-    "title": "Projects",
-    "section": "Personal & open-source",
-    "text": "Personal & open-source\n\n\n\n\n\n\nFBGA\nForward-Backward method for time-optimal velocity planning under generic acceleration constraints. Public C++ library, maintained solely by me. A 3D extension for spatial paths continues alongside it in FBGA_3D.\n2025 - present\n\nPaper Code\n\n\n\n\n\n\n\n\nVehiclePrimitives\nVehicle motion primitives and the MPTreeRRT planner, a sampling-based motion planner built on the MPTree publication, for generating feasible trajectories for cars, trucks, and autonomous robots.\n\nPaper Code\n\n\n\n\n\n\n\n\ngeographic_coordinates\nConversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and local East-North-Up (ENU) frames on the WGS84 ellipsoid - the standard way to turn raw GNSS fixes into a usable local frame.\n\nCode\n\n\n\n\n\n\n\n\nscope\nA browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as series, XY, or XYZ. No build step, no dependencies, runs entirely client-side.\n\nDemo\n\n\n\n\n\n\n\n\nDashboard\nA browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.\nComing soon"
+    "objectID": "projects/dashboard.html#data-sources",
+    "href": "projects/dashboard.html#data-sources",
+    "title": "Dashboard",
+    "section": "Data sources",
+    "text": "Data sources\nThe dashboard is agnostic to where its numbers come from: a self-driving demo cycle, static values typed into the settings panel, a CSV file replayed in real time, or a live WebSocket feed - the same page renders whatever it receives. A small Node publisher can also broadcast simulated or real telemetry piped in over stdin, so the same view works for a canned demo or an actual data source."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "projects/dashboard.html#try-it",
+    "href": "projects/dashboard.html#try-it",
+    "title": "Dashboard",
+    "section": "Try it",
+    "text": "Try it"
+  },
+  {
+    "objectID": "projects/dashboard.html#status",
+    "href": "projects/dashboard.html#status",
+    "title": "Dashboard",
+    "section": "Status",
+    "text": "Status\nEarly and in progress - both the live demo and the source are public.\n\nDemo Code"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mattia Piazza",
     "section": "",
-    "text": "Email: mattia.piazza.eng@google.com\nAddress: via Sommarive 9, 38123 Trento TN, Italy\n\n  \n\n\n\n\n Back to top"
+    "text": "Mattia Piazza\n\nMechatronics engineer | Software developer\n\n\nPlanning and control for vehicles that have to work.\n\n\ngithub linkedin scholar orcid\n\n\n\n  \n  \n    \n  \n  \n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I grew up wanting to know why things move the way they do. That curiosity eventually became a PhD: I build algorithms that find the fastest way a vehicle can move without asking for more grip than it has. I'm a PhD candidate in the Doctoral Program in Materials, Mechatronics and Systems Engineering (DRMMSE) at the University of Trento, where my days split between optimal control theory, C++, and convincing a solver to converge.\nThe common thread across everything I have worked on - minimum lap time simulation, real-time velocity planning, maneuver negotiation for self-driving cars - is the same question asked at different scales: given the physics a vehicle actually has, what is the fastest, safest thing it can do right now, and can the answer arrive fast enough to be useful. Off the clock, I trade the desk for a mountain: climbing, skiing, mountain biking, or grilling for whoever is around."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\n\n\n2022 - present\nPhD candidate, optimal control and motion planning for autonomous and racing vehicles, UniTN\n\n\n2025\nVisiting researcher, Autonomous Vehicle Systems Laboratory, TUM\n\n\n2020 - 2022\nPostgraduate scholarship, then a research fellowship on minimum-time optimal control for racing vehicles, UniTN\n\n\n2017 - 2020\nMSc in Mechatronics Engineering, UniTN\n\n\n2013 - 2017\nBSc in Mechanical Engineering, UniUD"
+  },
+  {
+    "objectID": "about.html#what-i-work-on",
+    "href": "about.html#what-i-work-on",
+    "title": "About",
+    "section": "What I work on",
+    "text": "What I work on\n\nOptimal control for minimum-time trajectory and velocity planning\nMotion planning and sampling-based algorithms for autonomous and racing vehicles\nAdvanced Driver-Assistance Systems (ADAS) and safety assurance\nVehicle dynamics and multibody modeling\nMulti-sensor, hardware-in-the-loop and real-vehicle testing"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\nA self-rated cheat sheet - reasonably honest, mostly earned the hard way.\n\n\n\nLanguages\n\n\n\n\nC++\n\n\nAdvanced\n\n\n\n\nMATLAB\n\n\nAdvanced\n\n\n\n\nMaple\n\n\nIntermediate\n\n\n\n\nMathematica\n\n\nIntermediate\n\n\n\n\nPython\n\n\nIntermediate\n\n\n\n\nRuby\n\n\nBase\n\n\n\n\nSimulink\n\n\nBase\n\n\n\n\n\n\nTools\n\n\n\n\ngit / GitHub\n\n\nAdvanced\n\n\n\n\nLaTeX / Quarto\n\n\nAdvanced\n\n\n\n\nPINS\n\n\nAdvanced\n\n\n\n\nCMake / Make\n\n\nIntermediate\n\n\n\n\nCarMaker\n\n\nIntermediate\n\n\n\n\nRTMaps\n\n\nBase\n\n\n\n\nCasADi\n\n\nBase\n\n\n\n\n\n\nAdditional\n\n\n\n\nUniTN bureaucracy\n\n\nBlack belt\n\n\n\n\nROS 2\n\n\nMinimal experience\n\n\n\n\nF1TENTH\n\n\nMinimal experience"
+  },
+  {
+    "objectID": "about.html#collaborations",
+    "href": "about.html#collaborations",
+    "title": "About",
+    "section": "Collaborations",
+    "text": "Collaborations\n\nDRIVEWISE - Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.\nneu4mes - collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento.\nAVS - Autonomous Vehicle Systems Laboratory, TUM. Principal investigator: Prof. Johannes Betz; visiting researcher, 2025."
   },
   {
     "objectID": "CV.html",
@@ -224,46 +280,32 @@
     "text": "Languages\n\n\n\n\n\n\n\n\n\n\n\n\nListening\nReading\nSpoken interaction\nSpoken production\nWriting\n\n\n\n\nItalian (mother tongue)\nC2\nC2\nC2\nC2\nC2\n\n\nEnglish\nC1\nC1\nC1\nC1\nC1\n\n\nGerman\nA1\nA2\nA1\nA1\nA1"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "I grew up wanting to know why things move the way they do. That curiosity eventually became a PhD: I build algorithms that find the fastest way a vehicle can move without asking for more grip than it has. I'm a PhD candidate in the Doctoral Program in Materials, Mechatronics and Systems Engineering (DRMMSE) at the University of Trento, where my days split between optimal control theory, C++, and convincing a solver to converge.\nThe common thread across everything I have worked on - minimum lap time simulation, real-time velocity planning, maneuver negotiation for self-driving cars - is the same question asked at different scales: given the physics a vehicle actually has, what is the fastest, safest thing it can do right now, and can the answer arrive fast enough to be useful. Off the clock, I trade the desk for a mountain: climbing, skiing, mountain biking, or grilling for whoever is around."
+    "text": "Email: mattia.piazza.eng@google.com\nAddress: via Sommarive 9, 38123 Trento TN, Italy\n\n  \n\n\n\n\n Back to top"
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "Background",
-    "text": "Background\n\n\n2022 - present\nPhD candidate, optimal control and motion planning for autonomous and racing vehicles, UniTN\n\n\n2025\nVisiting researcher, Autonomous Vehicle Systems Laboratory, TUM\n\n\n2020 - 2022\nPostgraduate scholarship, then a research fellowship on minimum-time optimal control for racing vehicles, UniTN\n\n\n2017 - 2020\nMSc in Mechatronics Engineering, UniTN\n\n\n2013 - 2017\nBSc in Mechanical Engineering, UniUD"
-  },
-  {
-    "objectID": "about.html#what-i-work-on",
-    "href": "about.html#what-i-work-on",
-    "title": "About",
-    "section": "What I work on",
-    "text": "What I work on\n\nOptimal control for minimum-time trajectory and velocity planning\nMotion planning and sampling-based algorithms for autonomous and racing vehicles\nAdvanced Driver-Assistance Systems (ADAS) and safety assurance\nVehicle dynamics and multibody modeling\nMulti-sensor, hardware-in-the-loop and real-vehicle testing"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About",
-    "section": "Skills",
-    "text": "Skills\nA self-rated cheat sheet - reasonably honest, mostly earned the hard way.\n\n\n\nLanguages\n\n\n\n\nC++\n\n\nAdvanced\n\n\n\n\nMATLAB\n\n\nAdvanced\n\n\n\n\nMaple\n\n\nIntermediate\n\n\n\n\nMathematica\n\n\nIntermediate\n\n\n\n\nPython\n\n\nIntermediate\n\n\n\n\nRuby\n\n\nBase\n\n\n\n\nSimulink\n\n\nBase\n\n\n\n\n\n\nTools\n\n\n\n\ngit / GitHub\n\n\nAdvanced\n\n\n\n\nLaTeX / Quarto\n\n\nAdvanced\n\n\n\n\nPINS\n\n\nAdvanced\n\n\n\n\nCMake / Make\n\n\nIntermediate\n\n\n\n\nCarMaker\n\n\nIntermediate\n\n\n\n\nRTMaps\n\n\nBase\n\n\n\n\nCasADi\n\n\nBase\n\n\n\n\n\n\nAdditional\n\n\n\n\nUniTN bureaucracy\n\n\nBlack belt\n\n\n\n\nROS 2\n\n\nMinimal experience\n\n\n\n\nF1TENTH\n\n\nMinimal experience"
-  },
-  {
-    "objectID": "about.html#collaborations",
-    "href": "about.html#collaborations",
-    "title": "About",
-    "section": "Collaborations",
-    "text": "Collaborations\n\nDRIVEWISE - Prof. Francesco Biral's research group at the University of Trento; my primary research collaboration.\nneu4mes - collaboration on neural-model-structured frameworks for autonomous driving. Principal investigator: Prof. Gastone Pietro Rosati Papini at the University of Trento.\nAVS - Autonomous Vehicle Systems Laboratory, TUM. Principal investigator: Prof. Johannes Betz; visiting researcher, 2025."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mattia Piazza",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Mattia Piazza\n\nMechatronics engineer | Software developer\n\n\nPlanning and control for vehicles that have to work.\n\n\ngithub linkedin scholar orcid\n\n\n\n  \n  \n    \n  \n  \n\n\n\n\n\n Back to top"
+    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - present"
+  },
+  {
+    "objectID": "projects.html#funded-institutional",
+    "href": "projects.html#funded-institutional",
+    "title": "Projects",
+    "section": "",
+    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - present"
+  },
+  {
+    "objectID": "projects.html#personal-open-source",
+    "href": "projects.html#personal-open-source",
+    "title": "Projects",
+    "section": "Personal & open-source",
+    "text": "Personal & open-source\n\n\n\n\n\n\nFBGA\nForward-Backward method for time-optimal velocity planning under generic acceleration constraints. Public C++ library, maintained solely by me. A 3D extension for spatial paths continues alongside it in FBGA_3D.\n2025 - present\n\nPaper Code\n\n\n\n\n\n\n\n\nVehiclePrimitives\nVehicle motion primitives and the MPTreeRRT planner, a sampling-based motion planner built on the MPTree publication, for generating feasible trajectories for cars, trucks, and autonomous robots.\n\nPaper Code\n\n\n\n\n\n\n\n\ngeographic_coordinates\nConversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and local East-North-Up (ENU) frames on the WGS84 ellipsoid - the standard way to turn raw GNSS fixes into a usable local frame.\n\nCode\n\n\n\n\n\n\n\n\nscope\nA browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as series, XY, or XYZ. No build step, no dependencies, runs entirely client-side.\n\nDemo\n\n\n\n\n\n\n\n\nDashboard\nA browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.\n\nDemo Code"
   },
   {
     "objectID": "projects/fbga.html",

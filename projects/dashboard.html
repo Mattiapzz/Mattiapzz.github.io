@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>scope – Mattia Piazza</title>
+<title>Dashboard – Mattia Piazza</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,11 +76,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="scope – Mattia Piazza">
+<meta property="og:title" content="Dashboard – Mattia Piazza">
 <meta property="og:description" content="Mechatronics engineer and software developer. Planning and control for vehicles that have to work.">
 <meta property="og:image" content="https://mattiapzz.github.io/projects/data/og-image.jpg">
 <meta property="og:site_name" content="Mattia Piazza">
-<meta name="twitter:title" content="scope – Mattia Piazza">
+<meta name="twitter:title" content="Dashboard – Mattia Piazza">
 <meta name="twitter:description" content="Mechatronics engineer and software developer. Planning and control for vehicles that have to work.">
 <meta name="twitter:image" content="https://mattiapzz.github.io/projects/data/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#why-a-browser-tool" id="toc-why-a-browser-tool" class="nav-link" data-scroll-target="#why-a-browser-tool">Why a browser tool</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data sources</a></li>
   <li><a href="#try-it" id="toc-try-it" class="nav-link" data-scroll-target="#try-it">Try it</a></li>
   <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
   </ul>
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">scope</h1>
+<h1 class="title">Dashboard</h1>
 </div>
 
 
@@ -174,27 +174,27 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../projects.html" class="eyebrow">&lt;- All projects</a></p>
-<p>Personal project | ongoing</p>
+<p>Personal project | in progress</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>A browser-based CSV/TSV scope viewer for telemetry and logs. Open a data file and plot its columns as time series, XY, or XYZ - no build step, no dependencies, nothing leaves the machine it runs on. Built for the same kind of quick, throwaway telemetry inspection that usually ends up in a one-off Python script, except it stays open in a browser tab and needs nothing installed.</p>
+<p>A fictitious digital car instrument cluster - speedometer, tachometer, gear indicator, shift lights, throttle and brake bars - built as a static, shareable web page. It can run a built-in demo animation, show fixed numbers, replay a CSV log, or render live data pushed over a WebSocket.</p>
 </section>
-<section id="why-a-browser-tool" class="level2">
-<h2 class="anchored" data-anchor-id="why-a-browser-tool">Why a browser tool</h2>
-<p>Most telemetry from simulation runs or vehicle logs is a CSV of time-stamped channels, and the fastest way to look at it shouldn't require opening a notebook or writing a plotting script. Because it's a static page with no server component, the same file works as a local double-click tool and as a hosted page - the file itself never has to leave the machine.</p>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data sources</h2>
+<p>The dashboard is agnostic to where its numbers come from: a self-driving demo cycle, static values typed into the settings panel, a CSV file replayed in real time, or a live WebSocket feed - the same page renders whatever it receives. A small Node publisher can also broadcast simulated or real telemetry piped in over stdin, so the same view works for a canned demo or an actual data source.</p>
 </section>
 <section id="try-it" class="level2">
 <h2 class="anchored" data-anchor-id="try-it">Try it</h2>
 <div class="responsive-embed">
-<iframe src="https://mattiapzz.github.io/scope/" title="scope live demo" loading="lazy">
+<iframe src="https://mattiapzz.github.io/CarDashboard-Sim/" title="Dashboard live demo" loading="lazy">
 </iframe>
 </div>
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
-<p>Ongoing personal project. The source repository is currently private; the live tool is public.</p>
+<p>Early and in progress - both the live demo and the source are public.</p>
 <div class="links-triple">
-<p><a href="https://mattiapzz.github.io/scope/" target="_blank" rel="noopener">Demo</a></p>
+<p><a href="https://mattiapzz.github.io/CarDashboard-Sim/" target="_blank" rel="noopener">Demo</a> <a href="https://github.com/Mattiapzz/CarDashboard-Sim" target="_blank" rel="noopener">Code</a></p>
 </div>
 
 

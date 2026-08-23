@@ -9,7 +9,7 @@ title: Projects
 ::: {.project-card}
 <div class="entry-logos">
 <img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
-<img class="entry-logo" src="data/logos/stellantis.svg" alt="Stellantis logo">
+<img class="entry-logo" src="https://www.stellantis.com/favicon.ico" alt="Stellantis logo">
 </div>
 
 ::: {.project-body}
@@ -36,7 +36,7 @@ Safety assUraNce fRamework for connected, automated mobIlity SystEms - a safety 
 ::: {.project-card}
 <div class="entry-logos">
 <img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
-<img class="entry-logo" src="data/logos/aprilia-racing.svg" alt="Aprilia Racing logo">
+<img class="entry-logo" src="https://www.aprilia.com/favicon.ico" alt="Aprilia Racing logo">
 </div>
 
 ::: {.project-body}

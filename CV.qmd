@@ -116,6 +116,26 @@ University of Trento, IT - Minimum Time Manoeuvres of complex vehicle models des
 :::
 :::
 
+::: {.entry}
+<img class="entry-logo" src="https://www.siapgears.com/themes/siapgears2020/assets/images/favicons/apple-touch-icon.png" alt="SIAP logo">
+
+::: {.entry-body}
+[Internship, Quality Control department]{.entry-title}\
+SIAP S.p.A. (Gruppo Carraro), IT - Precision measurements of mechanical components, sequential charts and control plans (SPC), CCP, and capability analysis (Cp, Cpk).\
+[Jun - Sep 2017]{.entry-meta}
+:::
+:::
+
+::: {.entry}
+<img class="entry-logo" src="https://irp.cdn-website.com//ba83a6cf/dms3rep/multi/opt/Logo-480w.png" alt="De Nardo Alessandro Impianti Termoidraulici logo">
+
+::: {.entry-body}
+[Plumber apprentice]{.entry-title}\
+De Nardo Alessandro Impianti Termoidraulici, IT - Summer apprenticeship, unrelated to my current career path but a formative experience.\
+[Jun - Sep 2012, Jun - Sep 2013]{.entry-meta}
+:::
+:::
+
 :::
 
 ## Projects
@@ -127,7 +147,7 @@ See the full list, including personal open-source work, on the [Projects](projec
 ::: {.entry}
 <div class="entry-logos">
 <img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
-<img class="entry-logo" src="data/logos/stellantis.svg" alt="Stellantis logo">
+<img class="entry-logo" src="https://www.stellantis.com/favicon.ico" alt="Stellantis logo">
 </div>
 
 ::: {.entry-body}
@@ -166,7 +186,7 @@ Fast real-time velocity profile optimization tool under generic complex gggv con
 ::: {.entry}
 <div class="entry-logos">
 <img class="entry-logo" src="data/logos/unitn.svg" alt="University of Trento logo">
-<img class="entry-logo" src="data/logos/aprilia-racing.svg" alt="Aprilia Racing logo">
+<img class="entry-logo" src="https://www.aprilia.com/favicon.ico" alt="Aprilia Racing logo">
 </div>
 
 ::: {.entry-body}
@@ -223,6 +243,18 @@ University of Udine\
 :::
 :::
 
+::: {.entry}
+::: {.entry-icon}
+{{< fa school >}}
+:::
+
+::: {.entry-body}
+[Scientific High School Diploma]{.entry-title} - PNI curriculum (Piano Nazionale Informatica)\
+Liceo Scientifico "Michelangelo Grigoletti"\
+[2008 - 2013]{.entry-meta}
+:::
+:::
+
 :::
 
 ## Teaching experience
@@ -256,7 +288,7 @@ University of Trento - Frontal lecturer and video lecture (DII YouTube channel).
 ::: {.entry-list}
 
 ::: {.entry}
-<img class="entry-logo" src="data/logos/reply.svg" alt="Reply logo">
+<img class="entry-logo" src="https://www.reply.com/favicon.ico" alt="Reply logo">
 
 ::: {.entry-body}
 [Reply Code Challenge - Standard Edition 2025]{.entry-title}\

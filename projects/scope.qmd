@@ -1,0 +1,33 @@
+---
+title: "scope"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Personal project | ongoing
+
+## Overview
+
+A browser-based CSV/TSV scope viewer for telemetry and logs. Open a data
+file and plot its columns as time series, XY, or XYZ - no build step, no
+dependencies, nothing leaves the machine it runs on. Built for the same kind
+of quick, throwaway telemetry inspection that usually ends up in a
+one-off Python script, except it stays open in a browser tab and needs
+nothing installed.
+
+## Why a browser tool
+
+Most telemetry from simulation runs or vehicle logs is a CSV of time-stamped
+channels, and the fastest way to look at it shouldn't require opening a
+notebook or writing a plotting script. Because it's a static page with no
+server component, the same file works as a local double-click tool and as a
+hosted page - the file itself never has to leave the machine.
+
+## Status
+
+Ongoing personal project. The source repository is currently private; the
+live tool is public.
+
+<div class="links-triple">
+<a href="https://mattiapzz.github.io/scope/" target="_blank" rel="noopener">Demo</a>
+</div>

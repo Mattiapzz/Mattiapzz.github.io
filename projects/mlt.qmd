@@ -1,0 +1,39 @@
+---
+title: "Minimum Lap Time Simulator"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Aprilia Racing | University of Trento\
+2021 - present
+
+## Overview
+
+An offline, optimal-control minimum lap time (MLT) simulator developed with
+Aprilia Racing for MotoGP. Given a track and a vehicle model, the simulator
+computes the fastest theoretically achievable lap and the full state and
+control trajectory that achieves it, rather than integrating a driver model
+forward in time like a traditional lap-time simulator.
+
+## Approach
+
+The motorcycle is modeled as a full multibody system (around 30 states),
+including a Magic-Formula-based tyre model (MF-MCTyre) and CFD-derived
+aerodynamic maps, and the minimum-time problem is solved as an indirect
+optimal control problem. Because the resulting boundary-value problem is
+numerically stiff and sensitive to the initial guess, the solver uses
+homotopy continuation - it solves a sequence of progressively harder
+problems, using each solution as the initial guess for the next, rather than
+attempting to solve the full nonlinear problem from a cold start.
+
+## Output
+
+Beyond the lap time itself, the simulator produces the full optimal state
+and control history - speed, lean angle, throttle, brake, tyre loads - which
+is compared against real telemetry to validate the vehicle model and probe
+where a rider is leaving performance on the table.
+
+## Status
+
+Ongoing, 2021 - present, developed with Aprilia Racing at the University of
+Trento.

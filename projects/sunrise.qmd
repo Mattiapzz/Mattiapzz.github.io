@@ -1,0 +1,32 @@
+---
+title: "SUNRISE"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Horizon Europe project | University of Trento\
+2024 - 2025
+
+## Overview
+
+SUNRISE - Safety assUraNce fRamework for connected, automated mobIlity
+SystEms - is a Horizon Europe project building a safety assurance framework
+for connected and automated mobility (CCAM). Rather than certifying a single
+autonomous driving stack in isolation, SUNRISE develops methods to rank and
+validate the safety of different automated agents (planners, controllers,
+perception stacks) against each other, so that safety claims can be compared
+on common ground.
+
+## What I worked on
+
+My contribution sits on the assurance side: contributing to the framework
+that ranks agents by how safely they behave across a set of scenarios,
+rather than by a single pass/fail metric. The intent is a framework that
+generalizes across vehicle types and automation levels, not one tuned to a
+single platform.
+
+## Status
+
+Ongoing, 2024 - 2025, University of Trento.
+
+<div class="links-triple"><a href="https://ccam-sunrise-project.eu/" target="_blank" rel="noopener">Project site</a></div>

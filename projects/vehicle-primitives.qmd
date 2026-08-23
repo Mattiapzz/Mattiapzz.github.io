@@ -1,0 +1,35 @@
+---
+title: "VehiclePrimitives"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Personal project | ongoing
+
+## Overview
+
+A library of motion primitives for vehicle navigation and control - short,
+pre-computed maneuver segments (e.g. cubic spiral paths, speed-matched
+transitions) that a planner can stitch together into a full trajectory
+instead of solving the whole path from scratch every time. Built to
+generate feasible trajectories for cars, trucks, and autonomous robots.
+
+## MPTreeRRT
+
+The primitives feed an MPTreeRRT planner: a sampling-based motion planner
+that explores the primitive space the way an RRT explores continuous state
+space, built on the sampling-based approach from the MPTree publication
+(*MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle
+Avoidance*, IFAC-PapersOnLine 2024). Rather than sampling raw
+control inputs, it samples from the library of dynamically-feasible
+primitives, which keeps every candidate trajectory kinematically valid by
+construction.
+
+## Status
+
+Public C++ library with Python bindings, ongoing personal project.
+
+<div class="links-triple">
+<a href="https://doi.org/10.1016/j.ifacol.2024.07.332" target="_blank" rel="noopener">Paper</a>
+<a href="https://github.com/mattiapzz/VehiclePrimitives" target="_blank" rel="noopener">Code</a>
+</div>

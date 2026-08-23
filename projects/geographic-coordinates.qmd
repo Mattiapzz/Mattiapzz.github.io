@@ -1,0 +1,39 @@
+---
+title: "geographic_coordinates"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Personal project | ongoing
+
+## Overview
+
+A small library for converting between the three coordinate frames that
+show up constantly in vehicle localization: geodetic coordinates
+(latitude/longitude/height, what a GNSS receiver hands you), Earth-Centered-
+Earth-Fixed (ECEF) coordinates, and a local East-North-Up (ENU) frame -
+built on the WGS84 ellipsoid, the datum GPS itself uses.
+
+## Why it exists
+
+Raw GNSS output is geodetic and effectively unusable directly for local
+motion planning or control - a change in latitude near the equator covers a
+different physical distance than the same change near a pole, and the
+numbers don't behave like a flat Cartesian frame at all. This library
+anchors a local ENU frame at a chosen origin and converts to and from it, so
+downstream code can work in plain, locally-flat meters instead of degrees of
+latitude and longitude.
+
+## Interface
+
+A C++ core with a thin Python binding layer (via a C API), so the same
+tested conversion code is usable from either language without maintaining
+two implementations.
+
+## Status
+
+Public C++/Python library, ongoing personal project.
+
+<div class="links-triple">
+<a href="https://github.com/mattiapzz/geographic_coordinates" target="_blank" rel="noopener">Code</a>
+</div>

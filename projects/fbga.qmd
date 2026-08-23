@@ -1,0 +1,49 @@
+---
+title: "FBGA"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Personal project, developed during the PhD | 2025 - present
+
+## Overview
+
+FBGA - Forward-Backward Generic Acceleration constraints - computes the
+maximum-performance velocity profile along a path given a complex g-g-v
+constraint envelope: the combined longitudinal/lateral acceleration limits a
+vehicle can actually sustain, which change with speed and aren't a simple
+circle or ellipse. Given a path's curvature profile and that envelope, the
+forward-backward algorithm finds the fastest velocity profile that never
+asks the vehicle for more grip than it has, running fast enough for
+real-time use rather than offline-only optimization.
+
+## From 2D to 3D
+
+The library started as a 2D solver - curvature-only path, single g-g
+envelope - published as *Real-Time Velocity Profile Optimization for
+Time-Optimal Maneuvering With Generic Acceleration Constraints* (IEEE
+Robotics and Automation Letters, 2025). It has since grown a 3D solver,
+generic over the vehicle's g-g-v model, that accounts for banked and pitched
+paths, load transfer, and speed-dependent grip - published as *Beyond the
+Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With
+Variable Friction* (IEEE Robotics and Automation Letters, 2026). The 3D
+solver was originally developed as its own repository,
+[FBGA_3D](https://github.com/mattiapzz/FBGA_3D), and is now ported into FBGA
+itself as an opt-in module.
+
+## Where it runs
+
+Used in the TUM Autonomous Vehicle Systems Laboratory's Indy Autonomous
+Challenge and Abu Dhabi Autonomous Racing League entries for online velocity
+planning under dynamic grip constraints.
+
+## Status
+
+Public C++ library, maintained solely by me, hosted under the DRIVEWISE
+organization. 2025 - present.
+
+<div class="links-triple">
+<a href="https://doi.org/10.1109/LRA.2025.3643297" target="_blank" rel="noopener">Paper (2D)</a>
+<a href="https://doi.org/10.1109/LRA.2026.3707351" target="_blank" rel="noopener">Paper (3D)</a>
+<a href="https://github.com/DRIVEWISE/FBGA" target="_blank" rel="noopener">Code</a>
+</div>

@@ -8,6 +8,7 @@ anchor-sections: false
 include-after-body:
   - text: |
       <script src="assets/reveal.js" defer></script>
+      <script src="assets/typewriter.js" defer></script>
 ---
 
 ::: {.hero}

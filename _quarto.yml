@@ -4,6 +4,7 @@ project:
   resources: [data, assets, google9d245cf9d8e764f1.html]
   render:
     - "*.qmd"
+    - "projects/*.qmd"
     - "!wave/"
     - "!wave-portrait/"
 
@@ -25,6 +26,8 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: projects.qmd
+        text: Projects
       - href: publications.qmd
         text: Publications
       - href: CV.qmd
@@ -40,6 +43,7 @@ format:
   html:
     theme: custom.scss
     toc: true
+    from: markdown-smart
 
 
 

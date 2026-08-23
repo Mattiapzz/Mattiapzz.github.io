@@ -1,0 +1,32 @@
+---
+title: "VeDi 2025"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+CRF - Stellantis | University of Trento\
+Ministero Italiano dello Sviluppo Economico - 2022 - 2024
+
+## Overview
+
+VeDi 2025 is an Italian Ministry of Economic Development (MISE) funded
+research project between Centro Ricerche Fiat (CRF, Stellantis) and the
+University of Trento. The goal is a motion planner that lets two or more
+autonomous vehicles negotiate a shared maneuver - a merge, an overtake, an
+intersection crossing - before either of them commits to it, using
+Vehicle-to-Everything (V2X) communication to exchange intent.
+
+## What I worked on
+
+My contribution focused on the planning side: formulating maneuver
+negotiation as an optimization problem where each vehicle proposes a
+trajectory, checks it against the intentions broadcast by nearby vehicles,
+and converges on a jointly feasible set of maneuvers rather than reacting to
+whatever the other vehicle happens to do. The planner runs online, so the
+negotiation has to converge fast enough to still be useful by the time the
+vehicles reach the interaction point.
+
+## Status
+
+Completed, 2022 - 2024, developed jointly with CRF - Stellantis at the
+University of Trento.

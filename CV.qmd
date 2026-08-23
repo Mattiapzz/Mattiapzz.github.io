@@ -120,6 +120,8 @@ University of Trento, IT - Minimum Time Manoeuvres of complex vehicle models des
 
 ## Projects
 
+See the full list, including personal open-source work, on the [Projects](projects.qmd) page.
+
 ::: {.entry-list}
 
 ::: {.entry}

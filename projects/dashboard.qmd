@@ -1,0 +1,38 @@
+---
+title: "Dashboard"
+---
+
+[<- All projects](../projects.qmd){.eyebrow}
+
+Personal project | in progress
+
+## Overview
+
+A fictitious digital car instrument cluster - speedometer, tachometer, gear
+indicator, shift lights, throttle and brake bars - built as a static,
+shareable web page. It can run a built-in demo animation, show fixed
+numbers, replay a CSV log, or render live data pushed over a WebSocket.
+
+## Data sources
+
+The dashboard is agnostic to where its numbers come from: a self-driving
+demo cycle, static values typed into the settings panel, a CSV file replayed
+in real time, or a live WebSocket feed - the same page renders whatever it
+receives. A small Node publisher can also broadcast simulated or real
+telemetry piped in over stdin, so the same view works for a canned demo or
+an actual data source.
+
+## Try it
+
+<div class="responsive-embed">
+<iframe src="https://mattiapzz.github.io/CarDashboard-Sim/" title="Dashboard live demo" loading="lazy"></iframe>
+</div>
+
+## Status
+
+Early and in progress - both the live demo and the source are public.
+
+<div class="links-triple">
+<a href="https://mattiapzz.github.io/CarDashboard-Sim/" target="_blank" rel="noopener">Demo</a>
+<a href="https://github.com/Mattiapzz/CarDashboard-Sim" target="_blank" rel="noopener">Code</a>
+</div>

@@ -23,6 +23,12 @@ notebook or writing a plotting script. Because it's a static page with no
 server component, the same file works as a local double-click tool and as a
 hosted page - the file itself never has to leave the machine.
 
+## Try it
+
+<div class="responsive-embed">
+<iframe src="https://mattiapzz.github.io/scope/" title="scope live demo" loading="lazy"></iframe>
+</div>
+
 ## Status
 
 Ongoing personal project. The source repository is currently private; the

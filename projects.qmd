@@ -116,15 +116,19 @@ A browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as se
 :::
 :::
 
-::: {.project-card .soon}
+::: {.project-card}
 ::: {.entry-icon}
-{{< fa hourglass-half >}}
+{{< fa car-side >}}
 :::
 
 ::: {.project-body}
-[Dashboard]{.project-title}\
-A browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.\
-[Coming soon]{.project-meta}
+[Dashboard](projects/dashboard.qmd){.project-title}\
+A browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.
+
+<div class="links-triple">
+<a href="https://mattiapzz.github.io/CarDashboard-Sim/" target="_blank" rel="noopener">Demo</a>
+<a href="https://github.com/Mattiapzz/CarDashboard-Sim" target="_blank" rel="noopener">Code</a>
+</div>
 :::
 :::
 

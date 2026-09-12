@@ -46,28 +46,49 @@
     "href": "projects/vedi.html#overview",
     "title": "VeDi 2025",
     "section": "Overview",
-    "text": "Overview\nVeDi 2025 is an Italian Ministry of Economic Development (MISE) funded research project between Centro Ricerche Fiat (CRF, Stellantis) and the University of Trento. The goal is a motion planner that lets two or more autonomous vehicles negotiate a shared maneuver - a merge, an overtake, an intersection crossing - before either of them commits to it, using Vehicle-to-Everything (V2X) communication to exchange intent."
+    "text": "Overview\nVeDi 2025 is an Italian Ministry of Economic Development (MISE) funded research project between Centro Ricerche Fiat (CRF, Stellantis) and the University of Trento, evaluating motion planning approaches in a real Stellantis test vehicle. It uses V2X (vehicle-to-vehicle and vehicle-to-infrastructure) communication enabled by the roadside infrastructure installed on the Brennero highway, and also covers deploying neural networks directly on the car's experimental ECU. Part of the work is directly tied to my PhD."
   },
   {
-    "objectID": "projects/vedi.html#what-i-worked-on",
-    "href": "projects/vedi.html#what-i-worked-on",
+    "objectID": "projects/vedi.html#two-planners",
+    "href": "projects/vedi.html#two-planners",
     "title": "VeDi 2025",
-    "section": "What I worked on",
-    "text": "What I worked on\nMy contribution focused on the planning side: formulating maneuver negotiation as an optimization problem where each vehicle proposes a trajectory, checks it against the intentions broadcast by nearby vehicles, and converges on a jointly feasible set of maneuvers rather than reacting to whatever the other vehicle happens to do. The planner runs online, so the negotiation has to converge fast enough to still be useful by the time the vehicles reach the interaction point."
+    "section": "Two planners",
+    "text": "Two planners\nStellantis wanted two independent planners evaluated in the same vehicle architecture:\n\nCODRIVER - an existing planner developed by Prof. Mauro Da Lio and collaborators during the European project DREAM4CARS, adapted by UniTN for this use case.\nMPTree - a sampling-based planner built from scratch by me, under the supervision of Prof. Francesco Biral. It is derived from RRT*, but exploits prior knowledge of the road geometry to shrink the exploration domain and reach real-time performance - not standard practice for RRT-based planning in robotics - and connects nodes with optimal motion primitives and clothoids instead of straight lines."
+  },
+  {
+    "objectID": "projects/vedi.html#development-path",
+    "href": "projects/vedi.html#development-path",
+    "title": "VeDi 2025",
+    "section": "Development path",
+    "text": "Development path\n\nMATLAB MVP to validate the core planning approach.\nThe MVP grew into the VehiclePrimitives library.\nC++ port, tested standalone and integrated with the commercial simulator IPG CarMaker.\nSIL and HIL testing on an experimental ECU (dSPACE AUTERA) replaying real car logs.\nVIL testing in the real vehicle, at the Vadena safety test site and at Stellantis's Balocco proving ground."
+  },
+  {
+    "objectID": "projects/vedi.html#maneuver-negotiation",
+    "href": "projects/vedi.html#maneuver-negotiation",
+    "title": "VeDi 2025",
+    "section": "Maneuver negotiation",
+    "text": "Maneuver negotiation\nAlongside single-vehicle planning, the project required decentralized negotiation between agents. Vehicles exchange over V2X not just their current state but their currently committed maneuver, so two vehicles can plan an intersection crossing, overtake, or cut-in jointly rather than reactively. A vehicle can also broadcast a desired maneuver that differs from its committed one; the receiving agent folds this into its own tree search, biasing both expansion and cost function toward a maneuver that works for both. The scheme is decentralized and emergent, based on mutual penalization and biasing rather than a central negotiator."
+  },
+  {
+    "objectID": "projects/vedi.html#publication",
+    "href": "projects/vedi.html#publication",
+    "title": "VeDi 2025",
+    "section": "Publication",
+    "text": "Publication\nMPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance (IFAC-PapersOnLine, 2024) - also covered in a chapter of my PhD thesis."
   },
   {
     "objectID": "projects/vedi.html#status",
     "href": "projects/vedi.html#status",
     "title": "VeDi 2025",
     "section": "Status",
-    "text": "Status\nCompleted, 2022 - 2024, developed jointly with CRF - Stellantis at the University of Trento."
+    "text": "Status\nCompleted, 2022 - 2024, developed jointly with CRF - Stellantis at the University of Trento.\n\nPaper"
   },
   {
     "objectID": "projects/scope.html",
     "href": "projects/scope.html",
     "title": "scope",
     "section": "",
-    "text": "&lt;- All projects\nPersonal project | ongoing"
+    "text": "&lt;- All projects\nPersonal project | 2026 - present"
   },
   {
     "objectID": "projects/scope.html#overview",
@@ -102,7 +123,7 @@
     "href": "projects/geographic-coordinates.html",
     "title": "geographic_coordinates",
     "section": "",
-    "text": "&lt;- All projects\nPersonal project | ongoing"
+    "text": "&lt;- All projects\nPersonal project | 2023 - present"
   },
   {
     "objectID": "projects/geographic-coordinates.html#overview",
@@ -137,7 +158,7 @@
     "href": "projects/dashboard.html",
     "title": "Dashboard",
     "section": "",
-    "text": "&lt;- All projects\nPersonal project | in progress"
+    "text": "&lt;- All projects\nPersonal project | 2026 - present"
   },
   {
     "objectID": "projects/dashboard.html#overview",
@@ -256,7 +277,7 @@
     "href": "CV.html#awards",
     "title": "Curriculum Vitae",
     "section": "Awards",
-    "text": "Awards\n\n\n\n\nReply Code Challenge - Standard Edition 2025\nIssued by Reply - 39th place among approximately 3,600 teams.\nJan 2025\n\n\n\n\n\nIFAC Young Author Award\nIFAC CTS 2024, Ayia Napa, Cyprus - for \"MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance\"\nJul 2024\n\n\n\n\n\nBest Poster Award\nDepartment of Industrial Engineering (DII), University of Trento - first place for \"MPTree: Motion primitive tree exploration for trajectory planning with dynamic and cooperative obstacle avoidance\"\nNov 2023"
+    "text": "Awards\n\n\n\n\nBest Paper Award Finalist\nAVEC 2026, Tsukuba, Japan - issued by the JSAE, one of the 10 papers selected as finalists, for \"Fast GGV Compliant Sampling-Based Planning for Vehicles\"\n2026\n\n\n\n\n\nReply Code Challenge - Standard Edition 2025\nIssued by Reply - 39th place among approximately 3,600 teams.\nJan 2025\n\n\n\n\n\nIFAC Young Author Award\nIFAC CTS 2024, Ayia Napa, Cyprus - for \"MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance\"\nJul 2024\n\n\n\n\n\nBest Poster Award\nDepartment of Industrial Engineering (DII), University of Trento - first place for \"MPTree: Motion primitive tree exploration for trajectory planning with dynamic and cooperative obstacle avoidance\"\nNov 2023"
   },
   {
     "objectID": "CV.html#software-and-programming-skills",
@@ -291,21 +312,21 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - present"
+    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - 2026"
   },
   {
     "objectID": "projects.html#funded-institutional",
     "href": "projects.html#funded-institutional",
     "title": "Projects",
     "section": "",
-    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - present"
+    "text": "VeDi 2025\nCRF - Stellantis | University of Trento - Ministero Italiano dello Sviluppo Economico\nDevelopment of a motion planner for maneuver negotiation between autonomous vehicles via V2X communication.\n2022 - 2024\n\n\n\n\n\nSUNRISE\nHorizon Europe project | University of Trento\nSafety assUraNce fRamework for connected, automated mobIlity SystEms - a safety assurance framework for connected and automated mobility (CCAM).\n2024 - 2025\n\nProject site\n\n\n\n\n\n \n\n\nMinimum Lap Time Simulator\nAprilia Racing | University of Trento\nOffline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\n2021 - 2026"
   },
   {
     "objectID": "projects.html#personal-open-source",
     "href": "projects.html#personal-open-source",
     "title": "Projects",
     "section": "Personal & open-source",
-    "text": "Personal & open-source\n\n\n\n\n\n\nFBGA\nForward-Backward method for time-optimal velocity planning under generic acceleration constraints. Public C++ library, maintained solely by me. A 3D extension for spatial paths continues alongside it in FBGA_3D.\n2025 - present\n\nPaper Code\n\n\n\n\n\n\n\n\nVehiclePrimitives\nVehicle motion primitives and the MPTreeRRT planner, a sampling-based motion planner built on the MPTree publication, for generating feasible trajectories for cars, trucks, and autonomous robots.\n\nPaper Code\n\n\n\n\n\n\n\n\ngeographic_coordinates\nConversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and local East-North-Up (ENU) frames on the WGS84 ellipsoid - the standard way to turn raw GNSS fixes into a usable local frame.\n\nCode\n\n\n\n\n\n\n\n\nscope\nA browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as series, XY, or XYZ. No build step, no dependencies, runs entirely client-side.\n\nDemo\n\n\n\n\n\n\n\n\nDashboard\nA browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.\n\nDemo Code"
+    "text": "Personal & open-source\n\n\n\n\n\n\nFBGA\nForward-Backward method for time-optimal velocity planning under generic acceleration constraints. Public C++ library.\n2025 - present\n\nPaper Code\n\n\n\n\n\n\n\n\nVehiclePrimitives\nVehicle motion primitives and the MPTreeRRT planner, a sampling-based motion planner built on the MPTree publication, for generating feasible trajectories for cars, trucks, and autonomous robots.\n2021 - present\n\nPaper Code\n\n\n\n\n\n\n\n\ngeographic_coordinates\nConversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and local East-North-Up (ENU) frames on the WGS84 ellipsoid - the standard way to turn raw GNSS fixes into a usable local frame.\n2023 - present\n\nCode\n\n\n\n\n\n\n\n\nscope\nA browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as series, XY, or XYZ. No build step, no dependencies, runs entirely client-side.\n2026 - present\n\nDemo\n\n\n\n\n\n\n\n\nDashboard\nA browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.\n2026 - present\n\nDemo Code"
   },
   {
     "objectID": "projects/fbga.html",
@@ -319,28 +340,56 @@
     "href": "projects/fbga.html#overview",
     "title": "FBGA",
     "section": "Overview",
-    "text": "Overview\nFBGA - Forward-Backward Generic Acceleration constraints - computes the maximum-performance velocity profile along a path given a complex g-g-v constraint envelope: the combined longitudinal/lateral acceleration limits a vehicle can actually sustain, which change with speed and aren't a simple circle or ellipse. Given a path's curvature profile and that envelope, the forward-backward algorithm finds the fastest velocity profile that never asks the vehicle for more grip than it has, running fast enough for real-time use rather than offline-only optimization."
+    "text": "Overview\nFBGA - Forward-Backward Generic Acceleration constraints - computes the maximum-performance velocity profile along a path given a complex g-g-v constraint envelope: the combined longitudinal/lateral acceleration limits a vehicle can actually sustain, which change with speed and aren't a simple circle or ellipse. Given a path's curvature profile and that envelope, the forward-backward algorithm finds the fastest velocity profile that never asks the vehicle for more grip than it has, running fast enough for real-time use rather than offline-only optimization. Existing forward-backward planners get their speed by assuming a simple (typically convex) shape for the g-g-v envelope so they can pre-compute the apexes to build the profile around; FBGA instead locates the switching points adaptively while it propagates the solution, so it needs no assumption at all about the envelope's shape - it treats it as a black box that can be evaluated point by point, whether it comes from a formula, a lookup table, or a high-fidelity vehicle model."
+  },
+  {
+    "objectID": "projects/fbga.html#accuracy-and-speed",
+    "href": "projects/fbga.html#accuracy-and-speed",
+    "title": "FBGA",
+    "section": "Accuracy and speed",
+    "text": "Accuracy and speed\nValidated against an indirect optimal control solver (Pins) across five racetracks and two vehicle classes (race car, motorcycle), the 2D solver matches lap times to within roughly 0.1-0.4%, while running up to three orders of magnitude faster - down to fractions of a millisecond per query, well within budget for online, onboard planning. Within a 300 m receding horizon representative of a moving-horizon planner, it solves in a fraction of a millisecond regardless of mesh size, against several milliseconds for the OCP."
   },
   {
     "objectID": "projects/fbga.html#from-2d-to-3d",
     "href": "projects/fbga.html#from-2d-to-3d",
     "title": "FBGA",
     "section": "From 2D to 3D",
-    "text": "From 2D to 3D\nThe library started as a 2D solver - curvature-only path, single g-g envelope - published as Real-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints (IEEE Robotics and Automation Letters, 2025). It has since grown a 3D solver, generic over the vehicle's g-g-v model, that accounts for banked and pitched paths, load transfer, and speed-dependent grip - published as Beyond the Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With Variable Friction (IEEE Robotics and Automation Letters, 2026). The 3D solver was originally developed as its own repository, FBGA_3D, and is now ported into FBGA itself as an opt-in module."
+    "text": "From 2D to 3D\nThe library started as a 2D solver - curvature-only path, single g-g envelope - published as Real-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints (IEEE Robotics and Automation Letters, 2025). It has since grown a 3D solver, generic over the vehicle's g-g-v model, that accounts for banked and pitched paths (Suzuka, Laguna Seca, Yas Marina), load transfer, spatially variable grip, and yellow-flag deceleration limits - published as Beyond the Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With Variable Friction (IEEE Robotics and Automation Letters, 2026). Unlike prior 3D forward-backward methods, it drops the assumption that a maneuver's apex sits at the geometric corner apex, computing it adaptively instead - within 0.2-0.3% of an OCP baseline and up to 44x faster than the closest prior forward-backward method, while eliminating the g-g-v violations (up to several percent) that apex precomputation causes on tracks with pronounced 3D geometry. It also natively handles non-convex envelopes, such as a motorcycle's no-wheeling/no-stoppie limits, which the super-elliptical formulation used by prior 3D methods cannot represent. The 3D solver was originally developed as its own repository, FBGA_3D, and is now ported into FBGA itself as an opt-in module."
+  },
+  {
+    "objectID": "projects/fbga.html#video-explanation",
+    "href": "projects/fbga.html#video-explanation",
+    "title": "FBGA",
+    "section": "Video explanation",
+    "text": "Video explanation"
+  },
+  {
+    "objectID": "projects/fbga.html#related-publications",
+    "href": "projects/fbga.html#related-publications",
+    "title": "FBGA",
+    "section": "Related publications",
+    "text": "Related publications\n\nReal-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints, IEEE Robotics and Automation Letters, 2025 - the original 2D FBGA paper.\nBeyond the Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With Variable Friction, IEEE Robotics and Automation Letters, 2026 - the 3D extension.\n\nTwo more papers building on FBGA are set to appear in their conference proceedings:\n\nFast GGV-Compliant Sampling-Based Planning for Vehicles, presented at AVEC 2026 (Tsukuba, Japan) - a JSAE Best Paper Award finalist. FBGA is used here as the trajectory-evaluation module inside a sampling-based planner running on a scaled autonomous racing vehicle.\n\n\n\n\n\n\n\n\nTrajectory Planning and Control near the Limits: an Open Experimental Benchmark on the RoboRacer Platform, IEEE ITSC 2026 (Naples) - an open benchmark where FBGA runs as the real-time velocity re-planner on the same scaled platform, in a different architectural role from the AVEC application."
   },
   {
     "objectID": "projects/fbga.html#where-it-runs",
     "href": "projects/fbga.html#where-it-runs",
     "title": "FBGA",
     "section": "Where it runs",
-    "text": "Where it runs\nUsed in the TUM Autonomous Vehicle Systems Laboratory's Indy Autonomous Challenge and Abu Dhabi Autonomous Racing League entries for online velocity planning under dynamic grip constraints."
+    "text": "Where it runs\nUsed in the TUM Autonomous Vehicle Systems Laboratory's Indy Autonomous Challenge and Abu Dhabi Autonomous Racing League entries, where it was benchmarked directly against the velocity planner the team actually races with - not an academic baseline."
+  },
+  {
+    "objectID": "projects/fbga.html#adoption",
+    "href": "projects/fbga.html#adoption",
+    "title": "FBGA",
+    "section": "Adoption",
+    "text": "Adoption\nBeyond my own use, FBGA has drawn interest from outside its original domain, all through unsolicited contact:\n\nA TUM group working on uncrewed aerial vehicles (UAVs) inquired about applying it to thrust/attitude envelopes, which are similarly non-convex and state-dependent.\nA conversation with an Italian industrial vehicle manufacturer at IEEE ICRA 2026 about a possible collaboration, still exploratory.\nAn ongoing collaboration with Philipp Braun's group (CIICADA Lab, Australian National University) has a joint paper in preparation.\n\nThe library is also distributed as an installable Python package, which lowers the bar for anyone to try it without going through a prior agreement."
   },
   {
     "objectID": "projects/fbga.html#status",
     "href": "projects/fbga.html#status",
     "title": "FBGA",
     "section": "Status",
-    "text": "Status\nPublic C++ library, maintained solely by me, hosted under the DRIVEWISE organization. 2025 - present.\n\nPaper (2D) Paper (3D) Code"
+    "text": "Status\nPublic C++ library, maintained solely by me, hosted under the DRIVEWISE organization. 2025 - present.\n\nPaper (2D) Paper (3D) Code PyPI"
   },
   {
     "objectID": "projects/mlt.html",
@@ -354,14 +403,14 @@
     "href": "projects/mlt.html#overview",
     "title": "Minimum Lap Time Simulator",
     "section": "Overview",
-    "text": "Overview\nAn offline, optimal-control minimum lap time (MLT) simulator developed with Aprilia Racing for MotoGP. Given a track and a vehicle model, the simulator computes the fastest theoretically achievable lap and the full state and control trajectory that achieves it, rather than integrating a driver model forward in time like a traditional lap-time simulator."
+    "text": "Overview\nAn offline, optimal-control minimum lap time (MLT) simulator developed with Aprilia Racing for MotoGP. Given a track and a vehicle model, the simulator computes the fastest theoretically achievable lap and the full state and control trajectory that achieves it, rather than integrating a driver model forward in time like a traditional lap-time simulator. The project is a direct spinoff of my master's thesis."
   },
   {
     "objectID": "projects/mlt.html#approach",
     "href": "projects/mlt.html#approach",
     "title": "Minimum Lap Time Simulator",
     "section": "Approach",
-    "text": "Approach\nThe motorcycle is modeled as a full multibody system (around 30 states), including a Magic-Formula-based tyre model (MF-MCTyre) and CFD-derived aerodynamic maps, and the minimum-time problem is solved as an indirect optimal control problem. Because the resulting boundary-value problem is numerically stiff and sensitive to the initial guess, the solver uses homotopy continuation - it solves a sequence of progressively harder problems, using each solution as the initial guess for the next, rather than attempting to solve the full nonlinear problem from a cold start."
+    "text": "Approach\nThe motorcycle is modeled as a full multibody system (around 30 states), including a Magic-Formula-based tyre model (MF-MCTyre) and CFD-derived aerodynamic maps, and the minimum-time problem is solved as an indirect optimal control problem. The modeling framework was developed in Maple, with C++ used for the custom classes, models, and solver integration. The boundary-value problem arising from the indirect method is solved with PINS, a specialized indirect optimal control solver developed by Prof. Enrico Bertolazzi, Prof. Francesco Biral, and Prof. Paolo Bosetti - closed source and under license, but available to academia free upon request. Because the problem is numerically stiff and sensitive to the initial guess, the solver uses homotopy continuation - it solves a sequence of progressively harder problems, using each solution as the initial guess for the next, rather than attempting to solve the full nonlinear problem from a cold start."
   },
   {
     "objectID": "projects/mlt.html#output",
@@ -375,7 +424,7 @@
     "href": "projects/mlt.html#status",
     "title": "Minimum Lap Time Simulator",
     "section": "Status",
-    "text": "Status\nOngoing, 2021 - present, developed with Aprilia Racing at the University of Trento."
+    "text": "Status\nCompleted, 2021 - 2026, developed with Aprilia Racing at the University of Trento.\n\nMaster's thesis"
   },
   {
     "objectID": "projects/sunrise.html",
@@ -389,28 +438,42 @@
     "href": "projects/sunrise.html#overview",
     "title": "SUNRISE",
     "section": "Overview",
-    "text": "Overview\nSUNRISE - Safety assUraNce fRamework for connected, automated mobIlity SystEms - is a Horizon Europe project building a safety assurance framework for connected and automated mobility (CCAM). Rather than certifying a single autonomous driving stack in isolation, SUNRISE develops methods to rank and validate the safety of different automated agents (planners, controllers, perception stacks) against each other, so that safety claims can be compared on common ground."
+    "text": "Overview\nSUNRISE - Safety Assurance Framework for Connected and Automated Mobility Systems - is a Horizon Europe project (Grant 101069573) coordinated by Applus IDIADA, with a 25+ partner consortium spanning automotive suppliers (Continental, Infineon, Renault, Toyota), research institutions (Chalmers, University of Warwick), testing organizations (RISE, AVL), and infrastructure bodies (ERTICO, TNO). It builds a harmonized, scalable safety assurance framework for CCAM: generating scenarios from an Operational Design Domain (ODD), allocating them across simulation, X-in-the-loop, and proving grounds, and aggregating microscopic test results into macroscopic safety conclusions, with a federated European scenario data framework, test case library, and handbook as deliverables."
   },
   {
     "objectID": "projects/sunrise.html#what-i-worked-on",
     "href": "projects/sunrise.html#what-i-worked-on",
     "title": "SUNRISE",
     "section": "What I worked on",
-    "text": "What I worked on\nMy contribution sits on the assurance side: contributing to the framework that ranks agents by how safely they behave across a set of scenarios, rather than by a single pass/fail metric. The intent is a framework that generalizes across vehicle types and automation levels, not one tuned to a single platform."
+    "text": "What I worked on\nOur contribution is a data-driven framework for quantifiable safety assessment: a stochastic model that predicts safety outcomes (collision, near-miss, safe) for any parametrized driving scenario, with quantified uncertainty, using bootstrap aggregation - an ensemble of compact feed-forward neural networks, each trained on a random sample of the scenario space. Unlike running full simulations, the trained ensemble executes in microseconds, enabling both offline diagnosis and online, real-time decision support.\nI applied the framework to MPTree - the planner developed in my PhD - for a full safety assessment and a real-time safe speed recommendation, and to CoDriver's larger simulation dataset for failure mode identification, showing the framework transfers across planning agents without modification. I also developed the two self-driving agents used as systems under test throughout this work: the Intelligent Driver Model (IDM) baseline and MPTree/Motion Planner itself."
+  },
+  {
+    "objectID": "projects/sunrise.html#applications",
+    "href": "projects/sunrise.html#applications",
+    "title": "SUNRISE",
+    "section": "Applications",
+    "text": "Applications\n\nSafety assessment - estimating collision probability over hypothetical risk subdomains (e.g. a distracted driver missing the merge, at various relative speeds and maneuver aggressiveness) via fast Monte Carlo evaluation of the trained ensemble.\nFailure mode identification - sampling near the learned collision boundary, clustering the resulting near-miss trajectories, and replaying a handful of representative cases per cluster to diagnose specific weaknesses instead of reviewing logs by hand.\nSafe speed advisor - an online application that, given the current traffic state, scans candidate ego velocities and recommends the one minimizing collision risk in real time."
+  },
+  {
+    "objectID": "projects/sunrise.html#publication",
+    "href": "projects/sunrise.html#publication",
+    "title": "SUNRISE",
+    "section": "Publication",
+    "text": "Publication\nBootstrapped Neural Models for Predicting Self-Driving Vehicle Collisions With Quantified Confidence: Offline and Online Applications (A. Cherubini, G. P. Rosati Papini, A. Plebe, M. Piazza, M. Da Lio - IEEE Transactions on Intelligent Vehicles, 2024), and a chapter of my PhD thesis."
   },
   {
     "objectID": "projects/sunrise.html#status",
     "href": "projects/sunrise.html#status",
     "title": "SUNRISE",
     "section": "Status",
-    "text": "Status\nOngoing, 2024 - 2025, University of Trento.\n\nProject site"
+    "text": "Status\nCompleted, 2024 - 2025, University of Trento.\n\nPaper Project site"
   },
   {
     "objectID": "projects/vehicle-primitives.html",
     "href": "projects/vehicle-primitives.html",
     "title": "VehiclePrimitives",
     "section": "",
-    "text": "&lt;- All projects\nPersonal project | ongoing"
+    "text": "&lt;- All projects\nPersonal project | 2021 - present"
   },
   {
     "objectID": "projects/vehicle-primitives.html#overview",
@@ -424,7 +487,7 @@
     "href": "projects/vehicle-primitives.html#mptreerrt",
     "title": "VehiclePrimitives",
     "section": "MPTreeRRT",
-    "text": "MPTreeRRT\nThe primitives feed an MPTreeRRT planner: a sampling-based motion planner that explores the primitive space the way an RRT explores continuous state space, built on the sampling-based approach from the MPTree publication (MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance, IFAC-PapersOnLine 2024). Rather than sampling raw control inputs, it samples from the library of dynamically-feasible primitives, which keeps every candidate trajectory kinematically valid by construction."
+    "text": "MPTreeRRT\nThe primitives feed an MPTree RRT planner: a sampling-based motion planner that explores the primitive space the way an RRT explores continuous state space, built on the sampling-based approach from the MPTree publication (MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance, IFAC-PapersOnLine 2024). Rather than sampling raw control inputs, it samples from the library of dynamically-feasible primitives, which keeps every candidate trajectory kinematically valid by construction."
   },
   {
     "objectID": "projects/vehicle-primitives.html#status",

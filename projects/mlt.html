@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-073b38a19a6a7dc6681c958dfccb95e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3bc954b53d401bdfd7179387a7756425.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-48cf93c2a6e232f98e7fa2dfa8128e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,11 +178,11 @@ ul.task-list li input[type="checkbox"] {
 2021 - present</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>An offline, optimal-control minimum lap time (MLT) simulator developed with Aprilia Racing for MotoGP. Given a track and a vehicle model, the simulator computes the fastest theoretically achievable lap and the full state and control trajectory that achieves it, rather than integrating a driver model forward in time like a traditional lap-time simulator.</p>
+<p>An offline, optimal-control minimum lap time (MLT) simulator developed with Aprilia Racing for MotoGP. Given a track and a vehicle model, the simulator computes the fastest theoretically achievable lap and the full state and control trajectory that achieves it, rather than integrating a driver model forward in time like a traditional lap-time simulator. The project is a direct spinoff of my master's thesis.</p>
 </section>
 <section id="approach" class="level2">
 <h2 class="anchored" data-anchor-id="approach">Approach</h2>
-<p>The motorcycle is modeled as a full multibody system (around 30 states), including a Magic-Formula-based tyre model (MF-MCTyre) and CFD-derived aerodynamic maps, and the minimum-time problem is solved as an indirect optimal control problem. Because the resulting boundary-value problem is numerically stiff and sensitive to the initial guess, the solver uses homotopy continuation - it solves a sequence of progressively harder problems, using each solution as the initial guess for the next, rather than attempting to solve the full nonlinear problem from a cold start.</p>
+<p>The motorcycle is modeled as a full multibody system (around 30 states), including a Magic-Formula-based tyre model (MF-MCTyre) and CFD-derived aerodynamic maps, and the minimum-time problem is solved as an indirect optimal control problem. The modeling framework was developed in Maple, with C++ used for the custom classes, models, and solver integration. The boundary-value problem arising from the indirect method is solved with PINS, a specialized indirect optimal control solver developed by Prof. Enrico Bertolazzi, Prof. Francesco Biral, and Prof. Paolo Bosetti - closed source and under license, but available to academia free upon request. Because the problem is numerically stiff and sensitive to the initial guess, the solver uses homotopy continuation - it solves a sequence of progressively harder problems, using each solution as the initial guess for the next, rather than attempting to solve the full nonlinear problem from a cold start.</p>
 </section>
 <section id="output" class="level2">
 <h2 class="anchored" data-anchor-id="output">Output</h2>
@@ -190,7 +190,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
-<p>Ongoing, 2021 - present, developed with Aprilia Racing at the University of Trento.</p>
+<p>Completed, 2021 - 2026, developed with Aprilia Racing at the University of Trento.</p>
+<div class="links-triple">
+<p><a href="https://doi.org/10.13140/RG.2.2.28167.21928/1" target="_blank" rel="noopener">Master's thesis</a></p>
+</div>
 
 
 </section>

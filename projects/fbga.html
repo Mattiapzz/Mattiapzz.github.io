@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-073b38a19a6a7dc6681c958dfccb95e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3bc954b53d401bdfd7179387a7756425.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-48cf93c2a6e232f98e7fa2dfa8128e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -145,8 +145,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#accuracy-and-speed" id="toc-accuracy-and-speed" class="nav-link" data-scroll-target="#accuracy-and-speed">Accuracy and speed</a></li>
   <li><a href="#from-2d-to-3d" id="toc-from-2d-to-3d" class="nav-link" data-scroll-target="#from-2d-to-3d">From 2D to 3D</a></li>
+  <li><a href="#video-explanation" id="toc-video-explanation" class="nav-link" data-scroll-target="#video-explanation">Video explanation</a></li>
+  <li><a href="#related-publications" id="toc-related-publications" class="nav-link" data-scroll-target="#related-publications">Related publications</a></li>
   <li><a href="#where-it-runs" id="toc-where-it-runs" class="nav-link" data-scroll-target="#where-it-runs">Where it runs</a></li>
+  <li><a href="#adoption" id="toc-adoption" class="nav-link" data-scroll-target="#adoption">Adoption</a></li>
   <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
   </ul>
 </nav>
@@ -177,21 +181,62 @@ ul.task-list li input[type="checkbox"] {
 <p>Personal project, developed during the PhD | 2025 - present</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>FBGA - Forward-Backward Generic Acceleration constraints - computes the maximum-performance velocity profile along a path given a complex g-g-v constraint envelope: the combined longitudinal/lateral acceleration limits a vehicle can actually sustain, which change with speed and aren't a simple circle or ellipse. Given a path's curvature profile and that envelope, the forward-backward algorithm finds the fastest velocity profile that never asks the vehicle for more grip than it has, running fast enough for real-time use rather than offline-only optimization.</p>
+<p>FBGA - Forward-Backward Generic Acceleration constraints - computes the maximum-performance velocity profile along a path given a complex g-g-v constraint envelope: the combined longitudinal/lateral acceleration limits a vehicle can actually sustain, which change with speed and aren't a simple circle or ellipse. Given a path's curvature profile and that envelope, the forward-backward algorithm finds the fastest velocity profile that never asks the vehicle for more grip than it has, running fast enough for real-time use rather than offline-only optimization. Existing forward-backward planners get their speed by assuming a simple (typically convex) shape for the g-g-v envelope so they can pre-compute the apexes to build the profile around; FBGA instead locates the switching points adaptively while it propagates the solution, so it needs no assumption at all about the envelope's shape - it treats it as a black box that can be evaluated point by point, whether it comes from a formula, a lookup table, or a high-fidelity vehicle model.</p>
+</section>
+<section id="accuracy-and-speed" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy-and-speed">Accuracy and speed</h2>
+<p>Validated against an indirect optimal control solver (Pins) across five racetracks and two vehicle classes (race car, motorcycle), the 2D solver matches lap times to within roughly 0.1-0.4%, while running up to three orders of magnitude faster - down to fractions of a millisecond per query, well within budget for online, onboard planning. Within a 300 m receding horizon representative of a moving-horizon planner, it solves in a fraction of a millisecond regardless of mesh size, against several milliseconds for the OCP.</p>
 </section>
 <section id="from-2d-to-3d" class="level2">
 <h2 class="anchored" data-anchor-id="from-2d-to-3d">From 2D to 3D</h2>
-<p>The library started as a 2D solver - curvature-only path, single g-g envelope - published as <em>Real-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints</em> (IEEE Robotics and Automation Letters, 2025). It has since grown a 3D solver, generic over the vehicle's g-g-v model, that accounts for banked and pitched paths, load transfer, and speed-dependent grip - published as <em>Beyond the Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With Variable Friction</em> (IEEE Robotics and Automation Letters, 2026). The 3D solver was originally developed as its own repository, <a href="https://github.com/mattiapzz/FBGA_3D">FBGA_3D</a>, and is now ported into FBGA itself as an opt-in module.</p>
+<p>The library started as a 2D solver - curvature-only path, single g-g envelope - published as <a href="https://doi.org/10.1109/LRA.2025.3643297"><em>Real-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints</em></a> (IEEE Robotics and Automation Letters, 2025). It has since grown a 3D solver, generic over the vehicle's g-g-v model, that accounts for banked and pitched paths (Suzuka, Laguna Seca, Yas Marina), load transfer, spatially variable grip, and yellow-flag deceleration limits - published as <a href="https://doi.org/10.1109/LRA.2026.3707351"><em>Beyond the Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With Variable Friction</em></a> (IEEE Robotics and Automation Letters, 2026). Unlike prior 3D forward-backward methods, it drops the assumption that a maneuver's apex sits at the geometric corner apex, computing it adaptively instead - within 0.2-0.3% of an OCP baseline and up to 44x faster than the closest prior forward-backward method, while eliminating the g-g-v violations (up to several percent) that apex precomputation causes on tracks with pronounced 3D geometry. It also natively handles non-convex envelopes, such as a motorcycle's no-wheeling/no-stoppie limits, which the super-elliptical formulation used by prior 3D methods cannot represent. The 3D solver was originally developed as its own repository, <a href="https://github.com/mattiapzz/FBGA_3D">FBGA_3D</a>, and is now ported into FBGA itself as an opt-in module.</p>
+</section>
+<section id="video-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="video-explanation">Video explanation</h2>
+<div class="responsive-embed">
+<iframe src="https://www.youtube.com/embed/6630WgF71cA" title="FBGA video explanation" loading="lazy" allowfullscreen="">
+</iframe>
+</div>
+</section>
+<section id="related-publications" class="level2">
+<h2 class="anchored" data-anchor-id="related-publications">Related publications</h2>
+<ul>
+<li><a href="https://doi.org/10.1109/LRA.2025.3643297"><em>Real-Time Velocity Profile Optimization for Time-Optimal Maneuvering With Generic Acceleration Constraints</em></a>, IEEE Robotics and Automation Letters, 2025 - the original 2D FBGA paper.</li>
+<li><a href="https://doi.org/10.1109/LRA.2026.3707351"><em>Beyond the Apex: Online Minimum-Time Velocity Planning on Three-Dimensional Paths With Variable Friction</em></a>, IEEE Robotics and Automation Letters, 2026 - the 3D extension.</li>
+</ul>
+<p>Two more papers building on FBGA are set to appear in their conference proceedings:</p>
+<ul>
+<li><p><em>Fast GGV-Compliant Sampling-Based Planning for Vehicles</em>, presented at AVEC 2026 (Tsukuba, Japan) - a JSAE Best Paper Award finalist. FBGA is used here as the trajectory-evaluation module inside a sampling-based planner running on a scaled autonomous racing vehicle.</p>
+<div class="responsive-embed">
+<iframe src="https://www.youtube.com/embed/u6TJDm9VU-k" title="AVEC 2026 paper presentation" loading="lazy" allowfullscreen="">
+</iframe>
+</div>
+<div class="responsive-embed">
+<iframe src="https://www.youtube.com/embed/oeigltdPv1A" title="Foxglove telemetry of the lap" loading="lazy" allowfullscreen="">
+</iframe>
+</div></li>
+<li><p><a href="https://arxiv.org/abs/2605.19881"><em>Trajectory Planning and Control near the Limits: an Open Experimental Benchmark on the RoboRacer Platform</em></a>, IEEE ITSC 2026 (Naples) - an open benchmark where FBGA runs as the real-time velocity re-planner on the same scaled platform, in a different architectural role from the AVEC application.</p></li>
+</ul>
 </section>
 <section id="where-it-runs" class="level2">
 <h2 class="anchored" data-anchor-id="where-it-runs">Where it runs</h2>
-<p>Used in the TUM Autonomous Vehicle Systems Laboratory's Indy Autonomous Challenge and Abu Dhabi Autonomous Racing League entries for online velocity planning under dynamic grip constraints.</p>
+<p>Used in the TUM Autonomous Vehicle Systems Laboratory's Indy Autonomous Challenge and Abu Dhabi Autonomous Racing League entries, where it was benchmarked directly against the velocity planner the team actually races with - not an academic baseline.</p>
+</section>
+<section id="adoption" class="level2">
+<h2 class="anchored" data-anchor-id="adoption">Adoption</h2>
+<p>Beyond my own use, FBGA has drawn interest from outside its original domain, all through unsolicited contact:</p>
+<ul>
+<li>A TUM group working on uncrewed aerial vehicles (UAVs) inquired about applying it to thrust/attitude envelopes, which are similarly non-convex and state-dependent.</li>
+<li>A conversation with an Italian industrial vehicle manufacturer at IEEE ICRA 2026 about a possible collaboration, still exploratory.</li>
+<li>An ongoing collaboration with Philipp Braun's group (CIICADA Lab, Australian National University) has a joint paper in preparation.</li>
+</ul>
+<p>The library is also distributed as an installable <a href="https://pypi.org/project/fbga-py/">Python package</a>, which lowers the bar for anyone to try it without going through a prior agreement.</p>
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
 <p>Public C++ library, maintained solely by me, hosted under the DRIVEWISE organization. 2025 - present.</p>
 <div class="links-triple">
-<p><a href="https://doi.org/10.1109/LRA.2025.3643297" target="_blank" rel="noopener">Paper (2D)</a> <a href="https://doi.org/10.1109/LRA.2026.3707351" target="_blank" rel="noopener">Paper (3D)</a> <a href="https://github.com/DRIVEWISE/FBGA" target="_blank" rel="noopener">Code</a></p>
+<p><a href="https://doi.org/10.1109/LRA.2025.3643297" target="_blank" rel="noopener">Paper (2D)</a> <a href="https://doi.org/10.1109/LRA.2026.3707351" target="_blank" rel="noopener">Paper (3D)</a> <a href="https://github.com/DRIVEWISE/FBGA" target="_blank" rel="noopener">Code</a> <a href="https://pypi.org/project/fbga-py/" target="_blank" rel="noopener">PyPI</a></p>
 </div>
 
 

@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-073b38a19a6a7dc6681c958dfccb95e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3bc954b53d401bdfd7179387a7756425.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-48cf93c2a6e232f98e7fa2dfa8128e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -145,7 +145,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#what-i-worked-on" id="toc-what-i-worked-on" class="nav-link" data-scroll-target="#what-i-worked-on">What I worked on</a></li>
+  <li><a href="#two-planners" id="toc-two-planners" class="nav-link" data-scroll-target="#two-planners">Two planners</a></li>
+  <li><a href="#development-path" id="toc-development-path" class="nav-link" data-scroll-target="#development-path">Development path</a></li>
+  <li><a href="#maneuver-negotiation" id="toc-maneuver-negotiation" class="nav-link" data-scroll-target="#maneuver-negotiation">Maneuver negotiation</a></li>
+  <li><a href="#publication" id="toc-publication" class="nav-link" data-scroll-target="#publication">Publication</a></li>
   <li><a href="#status" id="toc-status" class="nav-link" data-scroll-target="#status">Status</a></li>
   </ul>
 </nav>
@@ -177,15 +180,40 @@ ul.task-list li input[type="checkbox"] {
 Ministero Italiano dello Sviluppo Economico - 2022 - 2024</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>VeDi 2025 is an Italian Ministry of Economic Development (MISE) funded research project between Centro Ricerche Fiat (CRF, Stellantis) and the University of Trento. The goal is a motion planner that lets two or more autonomous vehicles negotiate a shared maneuver - a merge, an overtake, an intersection crossing - before either of them commits to it, using Vehicle-to-Everything (V2X) communication to exchange intent.</p>
+<p>VeDi 2025 is an Italian Ministry of Economic Development (MISE) funded research project between Centro Ricerche Fiat (CRF, Stellantis) and the University of Trento, evaluating motion planning approaches in a real Stellantis test vehicle. It uses V2X (vehicle-to-vehicle and vehicle-to-infrastructure) communication enabled by the roadside infrastructure installed on the Brennero highway, and also covers deploying neural networks directly on the car's experimental ECU. Part of the work is directly tied to my PhD.</p>
 </section>
-<section id="what-i-worked-on" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-worked-on">What I worked on</h2>
-<p>My contribution focused on the planning side: formulating maneuver negotiation as an optimization problem where each vehicle proposes a trajectory, checks it against the intentions broadcast by nearby vehicles, and converges on a jointly feasible set of maneuvers rather than reacting to whatever the other vehicle happens to do. The planner runs online, so the negotiation has to converge fast enough to still be useful by the time the vehicles reach the interaction point.</p>
+<section id="two-planners" class="level2">
+<h2 class="anchored" data-anchor-id="two-planners">Two planners</h2>
+<p>Stellantis wanted two independent planners evaluated in the same vehicle architecture:</p>
+<ul>
+<li><strong>CODRIVER</strong> - an existing planner developed by Prof. Mauro Da Lio and collaborators during the European project DREAM4CARS, adapted by UniTN for this use case.</li>
+<li><strong>MPTree</strong> - a sampling-based planner built from scratch by me, under the supervision of Prof. Francesco Biral. It is derived from RRT*, but exploits prior knowledge of the road geometry to shrink the exploration domain and reach real-time performance - not standard practice for RRT-based planning in robotics - and connects nodes with optimal motion primitives and clothoids instead of straight lines.</li>
+</ul>
+</section>
+<section id="development-path" class="level2">
+<h2 class="anchored" data-anchor-id="development-path">Development path</h2>
+<ol type="1">
+<li>MATLAB MVP to validate the core planning approach.</li>
+<li>The MVP grew into the <a href="../projects/vehicle-primitives.html">VehiclePrimitives</a> library.</li>
+<li>C++ port, tested standalone and integrated with the commercial simulator IPG CarMaker.</li>
+<li>SIL and HIL testing on an experimental ECU (dSPACE AUTERA) replaying real car logs.</li>
+<li>VIL testing in the real vehicle, at the Vadena safety test site and at Stellantis's Balocco proving ground.</li>
+</ol>
+</section>
+<section id="maneuver-negotiation" class="level2">
+<h2 class="anchored" data-anchor-id="maneuver-negotiation">Maneuver negotiation</h2>
+<p>Alongside single-vehicle planning, the project required decentralized negotiation between agents. Vehicles exchange over V2X not just their current state but their currently committed maneuver, so two vehicles can plan an intersection crossing, overtake, or cut-in jointly rather than reactively. A vehicle can also broadcast a <em>desired</em> maneuver that differs from its committed one; the receiving agent folds this into its own tree search, biasing both expansion and cost function toward a maneuver that works for both. The scheme is decentralized and emergent, based on mutual penalization and biasing rather than a central negotiator.</p>
+</section>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<p><em>MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle Avoidance</em> (IFAC-PapersOnLine, 2024) - also covered in a chapter of my PhD thesis.</p>
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
 <p>Completed, 2022 - 2024, developed jointly with CRF - Stellantis at the University of Trento.</p>
+<div class="links-triple">
+<p><a href="https://doi.org/10.1016/j.ifacol.2024.07.332" target="_blank" rel="noopener">Paper</a></p>
+</div>
 
 
 </section>

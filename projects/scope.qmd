@@ -4,7 +4,7 @@ title: "scope"
 
 [<- All projects](../projects.qmd){.eyebrow}
 
-Personal project | ongoing
+Personal project | 2026 - present
 
 ## Overview
 

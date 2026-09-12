@@ -11,22 +11,63 @@ Ministero Italiano dello Sviluppo Economico - 2022 - 2024
 
 VeDi 2025 is an Italian Ministry of Economic Development (MISE) funded
 research project between Centro Ricerche Fiat (CRF, Stellantis) and the
-University of Trento. The goal is a motion planner that lets two or more
-autonomous vehicles negotiate a shared maneuver - a merge, an overtake, an
-intersection crossing - before either of them commits to it, using
-Vehicle-to-Everything (V2X) communication to exchange intent.
+University of Trento, evaluating motion planning approaches in a real
+Stellantis test vehicle. It uses V2X (vehicle-to-vehicle and
+vehicle-to-infrastructure) communication enabled by the roadside
+infrastructure installed on the Brennero highway, and also covers
+deploying neural networks directly on the car's experimental ECU. Part of
+the work is directly tied to my PhD.
 
-## What I worked on
+## Two planners
 
-My contribution focused on the planning side: formulating maneuver
-negotiation as an optimization problem where each vehicle proposes a
-trajectory, checks it against the intentions broadcast by nearby vehicles,
-and converges on a jointly feasible set of maneuvers rather than reacting to
-whatever the other vehicle happens to do. The planner runs online, so the
-negotiation has to converge fast enough to still be useful by the time the
-vehicles reach the interaction point.
+Stellantis wanted two independent planners evaluated in the same vehicle
+architecture:
+
+- **CODRIVER** - an existing planner developed by Prof. Mauro Da Lio and
+  collaborators during the European project DREAM4CARS, adapted by UniTN
+  for this use case.
+- **MPTree** - a sampling-based planner built from scratch by me, under
+  the supervision of Prof. Francesco Biral. It is derived from RRT*, but
+  exploits prior knowledge of the road geometry to shrink the exploration
+  domain and reach real-time performance - not standard practice for
+  RRT-based planning in robotics - and connects nodes with optimal motion
+  primitives and clothoids instead of straight lines.
+
+## Development path
+
+1. MATLAB MVP to validate the core planning approach.
+2. The MVP grew into the [VehiclePrimitives](vehicle-primitives.qmd)
+   library.
+3. C++ port, tested standalone and integrated with the commercial
+   simulator IPG CarMaker.
+4. SIL and HIL testing on an experimental ECU (dSPACE AUTERA) replaying
+   real car logs.
+5. VIL testing in the real vehicle, at the Vadena safety test site and at
+   Stellantis's Balocco proving ground.
+
+## Maneuver negotiation
+
+Alongside single-vehicle planning, the project required decentralized
+negotiation between agents. Vehicles exchange over V2X not just their
+current state but their currently committed maneuver, so two vehicles can
+plan an intersection crossing, overtake, or cut-in jointly rather than
+reactively. A vehicle can also broadcast a *desired* maneuver that differs
+from its committed one; the receiving agent folds this into its own tree
+search, biasing both expansion and cost function toward a maneuver that
+works for both. The scheme is decentralized and emergent, based on mutual
+penalization and biasing rather than a central negotiator.
+
+## Publication
+
+*MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle
+Avoidance* (IFAC-PapersOnLine, 2024) - also covered in a chapter of my PhD
+thesis.
 
 ## Status
 
 Completed, 2022 - 2024, developed jointly with CRF - Stellantis at the
 University of Trento.
+
+<div class="links-triple">
+<a href="https://doi.org/10.1016/j.ifacol.2024.07.332" target="_blank" rel="noopener">Paper</a>
+</div>

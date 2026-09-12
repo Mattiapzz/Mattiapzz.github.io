@@ -288,6 +288,16 @@ University of Trento - Frontal lecturer and video lecture (DII YouTube channel).
 ::: {.entry-list}
 
 ::: {.entry}
+<img class="entry-logo" src="https://www.jsae.or.jp/en/img/common/logo-symbol.png" alt="JSAE logo">
+
+::: {.entry-body}
+[Best Paper Award Finalist]{.entry-title}\
+AVEC 2026, Tsukuba, Japan - issued by the JSAE, one of the 10 papers selected as finalists, for *"Fast GGV Compliant Sampling-Based Planning for Vehicles"*\
+[2026]{.entry-meta}
+:::
+:::
+
+::: {.entry}
 <img class="entry-logo" src="https://www.reply.com/favicon.ico" alt="Reply logo">
 
 ::: {.entry-body}

@@ -43,7 +43,7 @@ Safety assUraNce fRamework for connected, automated mobIlity SystEms - a safety 
 [Minimum Lap Time Simulator](projects/mlt.qmd){.project-title}\
 Aprilia Racing | University of Trento\
 Offline optimal-control minimum lap time simulator for MotoGP, with performance analysis against telemetry.\
-[2021 - present]{.project-meta}
+[2021 - 2026]{.project-meta}
 :::
 :::
 
@@ -60,7 +60,7 @@ Offline optimal-control minimum lap time simulator for MotoGP, with performance 
 
 ::: {.project-body}
 [FBGA](projects/fbga.qmd){.project-title}\
-Forward-Backward method for time-optimal velocity planning under generic acceleration constraints. Public C++ library, maintained solely by me. A 3D extension for spatial paths continues alongside it in [FBGA_3D](https://github.com/mattiapzz/FBGA_3D).\
+Forward-Backward method for time-optimal velocity planning under generic acceleration constraints. Public C++ library.\
 [2025 - present]{.project-meta}
 
 <div class="links-triple">
@@ -77,8 +77,8 @@ Forward-Backward method for time-optimal velocity planning under generic acceler
 
 ::: {.project-body}
 [VehiclePrimitives](projects/vehicle-primitives.qmd){.project-title}\
-Vehicle motion primitives and the MPTreeRRT planner, a sampling-based motion planner built on the MPTree publication, for generating feasible trajectories for cars, trucks, and autonomous robots.
-
+Vehicle motion primitives and the MPTreeRRT planner, a sampling-based motion planner built on the MPTree publication, for generating feasible trajectories for cars, trucks, and autonomous robots.\
+[2021 - present]{.project-meta}
 <div class="links-triple">
 <a href="https://doi.org/10.1016/j.ifacol.2024.07.332" target="_blank" rel="noopener">Paper</a>
 <a href="https://github.com/mattiapzz/VehiclePrimitives" target="_blank" rel="noopener">Code</a>
@@ -93,8 +93,8 @@ Vehicle motion primitives and the MPTreeRRT planner, a sampling-based motion pla
 
 ::: {.project-body}
 [geographic_coordinates](projects/geographic-coordinates.qmd){.project-title}\
-Conversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and local East-North-Up (ENU) frames on the WGS84 ellipsoid - the standard way to turn raw GNSS fixes into a usable local frame.
-
+Conversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and local East-North-Up (ENU) frames on the WGS84 ellipsoid - the standard way to turn raw GNSS fixes into a usable local frame.\
+[2023 - present]{.project-meta}
 <div class="links-triple">
 <a href="https://github.com/mattiapzz/geographic_coordinates" target="_blank" rel="noopener">Code</a>
 </div>
@@ -108,8 +108,8 @@ Conversion library between geodetic, Earth-Centered-Earth-Fixed (ECEF), and loca
 
 ::: {.project-body}
 [scope](projects/scope.qmd){.project-title}\
-A browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as series, XY, or XYZ. No build step, no dependencies, runs entirely client-side.
-
+A browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as series, XY, or XYZ. No build step, no dependencies, runs entirely client-side.\
+[2026 - present]{.project-meta}
 <div class="links-triple">
 <a href="https://mattiapzz.github.io/scope/" target="_blank" rel="noopener">Demo</a>
 </div>
@@ -123,8 +123,8 @@ A browser-based CSV/TSV scope viewer for telemetry and logs - plot columns as se
 
 ::: {.project-body}
 [Dashboard](projects/dashboard.qmd){.project-title}\
-A browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.
-
+A browser-based vehicle dashboard emulator - speed, RPM, gear and other channels rendered live, in HTML.\
+[2026 - present]{.project-meta}
 <div class="links-triple">
 <a href="https://mattiapzz.github.io/CarDashboard-Sim/" target="_blank" rel="noopener">Demo</a>
 <a href="https://github.com/Mattiapzz/CarDashboard-Sim" target="_blank" rel="noopener">Code</a>

@@ -4,7 +4,7 @@ title: "geographic_coordinates"
 
 [<- All projects](../projects.qmd){.eyebrow}
 
-Personal project | ongoing
+Personal project | 2023 - present
 
 ## Overview
 

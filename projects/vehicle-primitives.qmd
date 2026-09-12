@@ -4,7 +4,7 @@ title: "VehiclePrimitives"
 
 [<- All projects](../projects.qmd){.eyebrow}
 
-Personal project | ongoing
+Personal project | 2021 - present
 
 ## Overview
 
@@ -16,7 +16,7 @@ generate feasible trajectories for cars, trucks, and autonomous robots.
 
 ## MPTreeRRT
 
-The primitives feed an MPTreeRRT planner: a sampling-based motion planner
+The primitives feed an MPTree RRT planner: a sampling-based motion planner
 that explores the primitive space the way an RRT explores continuous state
 space, built on the sampling-based approach from the MPTree publication
 (*MPTree: A Sampling-based Vehicle Motion Planner for Real-time Obstacle
